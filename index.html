@@ -8,35 +8,81 @@
 
 <body>
   <header class="main-header">
-        <a class="main-header-logo">
-            <img src="img/index-logo.png" width="154" height="64" alt="Логотип магазина мороженного «Gllacy»">
-          </a>
-      <nav class="main-navigator">
-        <ul class="site-navigator">
-          <li>
-            <a href="Catalog.html">Каталог</a>
-          </li>
-          <li>
-            <a href="Shipping-and-payment.html">Доставка и оплата</a>
-          </li>
-          <li>
-            <a href="company.html">О компании</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="user-navigation">
-          <li class="search">Поиск</li>
-          <li class="login-link">Вход</li>
-          <li class="basket">Корзина</li>
+    <a class="main-header-logo">
+      <img src="img/index-logo.png" width="154" height="64" alt="Логотип магазина мороженного «Gllacy»">
+    </a>
+    <nav class="main-navigator">
+      <ul class="site-navigator">
+        <li>
+          <a href="Catalog.html">Каталог</a>
+          <ul>
+            <li>
+              <a href="#">Новинки</a>
+            </li>
+            <li>
+              <a href="#">Сливочное</a>
+            </li>
+            <li>
+              <a href="#">Щербеты</a>
+            </li>
+            <li>
+              <a href="#">Фруктовый лёд</a>
+            </li>
+            <li>
+              <a href="#">Мелорин</a>
+            </li>
+          </ul>
+
+        </li>
+        <li>
+          <a href="Shipping-and-payment.html">Доставка и оплата</a>
+        </li>
+        <li>
+          <a href="company.html">О компании</a>
+        </li>
       </ul>
-      <b class="time-work">С 10 до 20, ежедневно</b>
-      <b class="number">8 812 450-25-25</b>
+    </nav>
+    <ul class="user-navigation-search">
+      <li class="search">
+        <button class="search1">Поиск</button>
+        <a class="button-search" href="button-search.html"></a>
+        <input type="search" name="search" placeholder="Что ищем?">
+        <span>Что ищем?</span>
+      </li>
+    </ul>
+    <ul class="user-navigation-enter">
+      <li class="login-link">
+        <button class="enter1">Вход</button>
+        <input type="text" id="login" name="login" placeholder="Электронная почта">
+        <input type="text" id="pass" name="pass" placeholder="Пароль">
+        <button class="enter">Войти</button>
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </li>
+
+    </ul>
+    <ul>
+      <li class="basket">
+        <a class="cage" href="#">Корзина</a>
+      </li>
+    </ul>
+    <div class="feedback-form-index">
+          <strong>Мы обязательно вам ответим!</strong>
+          <input type="text" id="your-name" placeholder="Как вас зовут?">
+          <input type="text" id="your-email" placeholder="Ваша почта для ответа?">
+          <input type="text" id="mess" placeholder="Напишите что нибудь...">
+          <button class="ship">Отправить</button>
+      </div>
+      
+    <b class="time-work">С 10 до 20, ежедневно</b>
+    <b class="number">8 812 450-25-25</b>
   </header>
   <main class="container">
     <h1 class="visually-hidden">Магазин мороженного «Gllacy»</h1>
     <section class="banner1">
       <h2 class="for-free1">Малинка даром!</h2>
-      <p>При покупке 2кг любого фруктового мороженного, добавим<br> в ваш заказ банку малинового варенья бесплатно.</p>
+      <p>При покупке 2кг любого фруктового мороженного, добавим
+        <br> в ваш заказ банку малинового варенья бесплатно.</p>
       <button class="want-a-jam">Хочу варенье!</button>
       <a class="banner-jam">
         <img src="img/raspberries.jpg" width="560" height="229" alt="баннер с малинкой)">
@@ -44,7 +90,8 @@
     </section>
     <section class="banner2">
       <h2 class="for-free2">Шоколадки даром!</h2>
-      <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку<br> вкуснейшей шоколадной присыпки совершенно бесплатно.
+      <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку
+        <br> вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
       <button class="want-a-chocolate">Хочу шоколадки!</button>
       <a class="banner-chocolate">
@@ -52,7 +99,7 @@
       </a>
     </section>
     <section class="price">
-        <h2 class="visually-hidden">Примеры мороженного «Gllacy»</h2>
+      <h2 class="visually-hidden">Примеры мороженного «Gllacy»</h2>
       <ul>
         <li class="ice1">
 
@@ -93,8 +140,8 @@
         <br> ингредиенты и добавки произведены из натурального,
         <br> экологически чистого сырья.
       </p>
-      <img src="img/icon-ice.png" width="49" height="49" alt="мороженка">
-      <img src="img/icon-list.png" width="49" height="49" alt="листик">
+      <img src="img/icon-ice.svg" width="49" height="49" alt="мороженка">
+      <img src="img/icon-list.svg" width="49" height="49" alt="листик">
       <p>Закупка ингредиентов производится только у проверенных
         <br> фермерских хозяйств и компаний, с которыми нас связывает
         <br> долговременное сотрудничество.
@@ -105,7 +152,7 @@
         <br> растаять в пути и позволяет сохранить превосходный вкус.
       </p>
       <img src="img/icon-beacon.svg" width="49" height="49" alt="корова">
-      <img src="img/icon-termometer.png" width="49" height="49" alt="градусник">
+      <img src="img/icon-termometer.svg" width="49" height="49" alt="градусник">
     </section>
     <section class="news">
       <img src="img/news.jpg" width="560" height="220" alt="клубничка">
@@ -116,13 +163,29 @@
       </a>
     </section>
     <section class="subscribe">
-        <h3 class="visually-hidden">Подписка на новости «Gllacy»</h3>
+      <h3 class="visually-hidden">Подписка на новости «Gllacy»</h3>
       <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
         <br> всего самого вкусного, что у нас происходит. Обещаем не спамить
         <br> и не слать всякой ненужной ерунды. Честно =) </p>
       <label for="email">Электронная почта</label>
       <input type="email" id="email" name="email" placeholder="Электронная почта">
       <button type="submit">Отправить</button>
+    </section>
+    <section class="map">
+      <img src="img/map.jpg" width="1250" height="430" alt="карта местности">
+      <img src="img/ice-lable.svg" width="80" height="140" alt="метка мороженка">
+      <div class="feedback-form">
+        <h4>Адрес главного офиса
+          <br>и офлайн-магазина</h4>
+        <strong>
+          ул. Большая Конюшенная
+          <br>19/8, Санкт-Петербург
+        </strong>
+        <p>Для заказов по телефону:</p>
+        <strong>8 812 450-25-25</strong>
+        <p>(с 10 до 20 ежедневно)</p>
+        <a class="site-button feedback-button" href="feedback.html">Форма обратной связи</a>
+      </div>
     </section>
 
   </main>
