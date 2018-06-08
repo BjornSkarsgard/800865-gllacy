@@ -44,30 +44,38 @@
                 </li>
             </ul>
         </nav>
-        <ul class="user-navigation-search">
-            <li class="search">
+        <div class="user-navigation-search">
+            <div class="search">
                 <button class="search1">Поиск</button>
-                <a class="button-search" href="button-search.html"></a>
-                <input type="search" name="search" placeholder="Что ищем?">
-                <span>Что ищем?</span>
-            </li>
-        </ul>
-        <ul class="user-navigation-enter">
-            <li class="login-link">
-                <button class="enter1">Вход</button>
-                <input type="text" id="login" name="login" placeholder="Электронная почта">
-                <input type="text" id="pass" name="pass" placeholder="Пароль">
-                <button class="enter">Войти</button>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-            </li>
+                <div class="div-search">
+                    <input type="text" id="search-text" name="search-text">
+                    <span>Что ищем?</span>
+                </div>
+            </div>
+        </div>
+        <p>Вход</p>
+        <form class="user" method="POST" action="#">
+            <p>
+                <input id="user-login" type="text" name="login" placeholder="Электронная почта">
+            </p>
+            <p>
+                <input id="user-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <button type="submit">Войти</button>
+            <p>
+                <a class="restore" href="#">Забыли пароль?</a>
+            </p>
+            <p>
+                <a class="new-registration" href="#">Новая регистрация</a>
+            </p>
+        </form>
 
-        </ul>
-        <ul>
-            <li class="basket">
+        </div>
+        <div>
+            <div class="basket">
                 <a class="cage" href="#">Корзина</a>
-            </li>
-        </ul>
+            </div>
+        </div>
         <table>
             <tr>
                 <td>
@@ -119,13 +127,7 @@
 
 
 
-        <div class="feedback-form-index">
-            <strong>Мы обязательно вам ответим!</strong>
-            <input type="text" id="your-name" placeholder="Как вас зовут?">
-            <input type="text" id="your-email" placeholder="Ваша почта для ответа?">
-            <input type="text" id="mess" placeholder="Напишите что нибудь...">
-            <button class="ship">Отправить</button>
-        </div>
+
 
         <b class="time-work">С 10 до 20, ежедневно</b>
         <b class="number">8 812 450-25-25</b>
@@ -259,30 +261,42 @@
         </section>
     </main>
     <footer>
-        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-        <a class="social-btn social-btn-in" href="#">Инстаграм</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
-        <table class="table-footer-menu">
-            <tr>
-                <td>
+        <ul>
+            <li class="social-btn social-btn-tw">
+                <a href="#">Твиттер</a>
+            </li>
+            <li class="social-btn social-btn-in">
+                <a href="#">Инстаграм</a>
+            </li>
+            <li class="social-btn social-btn-fb">
+                <a href="#">Фейсбук</a>
+            </li>
+            <li class="social-btn social-btn-vk">
+                <a href="#">ВКонтакте</a>
+            </li>
+        </ul>
+        <div class="table-footer-menu">
+            <ul>
+                <li>
                     <a class="heart" href="#">Для поставщиков</a>
-                </td>
-                <td>
+                </li>
+                <li>
                     <a href="#">Наши документы</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </li>
+            </ul>
+            <ul>
+                <li>
                     <a href=#>О производстве</a>
-                </td>
-                <td>
+                </li>
+                <li>
                     <a href="#">Экологические стандарты</a>
-                </td>
-            </tr>
-        </table>
-        <img src="/img/html-logo.svg" width="108" height="39" alt="Логотип HTMLAcademy">
-        <p>Сделано в HTML Academy © 2017</p>
+                </li>
+            </ul>
+        </div>
+        <div class="htmlacademy-logo">
+            <img src="/img/html-logo.svg" width="108" height="39" alt="Логотип HTMLAcademy">
+            <p>Сделано в HTML Academy © 2017</p>
+        </div>
     </footer>
 </body>
 
