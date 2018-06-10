@@ -137,6 +137,66 @@
         </ul>
         <section class="catalog-ice">
             <h1>Сливочное мороженое</h1>
+            <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="sortirovka">
+                <lable for="popular">Сортировка</lable>
+                <select id="popular">
+                    <option>по популярности</option>
+                    <option>сначала недорогие</option>
+                    <option>сначала дорогие</option>
+                    <option>по жирности</option>
+                </select>
+                <div>
+                    <label>Цена: 100 руб.- 500 руб.</label>
+                    100<input type="range" id="select-price" name="select-price" min="100" max="500" step="1" value="250">500
+                </div>
+                <div class="fat">
+                    <label>Жирность:</label>
+                    <label>
+                            <input type="radio" name="fat" value="0%"> 
+                            0% 
+                    </label>
+                    <label>
+                            <input type="radio" name="fat" value="-10%"> 
+                            до 10% 
+                    </label>
+                    <label>
+                            <input type="radio" name="fat" value="-30%"> 
+                            до 30% 
+                    </label>
+                    <label>
+                            <input type="radio" name="fat" value="+30%"> 
+                            выше 30% 
+                    </label>
+                </div>
+                <div class="inice">
+                    <label>Наполнители:</label>
+                    <label>
+                    <input type="checkbox" name="chocolad" id="chocolaad">
+                    шоколадные
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sugar" id="sugar">
+                    сахарные присыпки    
+                    </label>
+                    <label>
+                     <input type="checkbox" name="fruit" id="fruit">
+                        фрукты
+                    </label>
+                    <label>
+                   <input type="checkbox" name="sirop" id="sirop">
+                        сиропы
+                    </label>
+                    <label>
+                    <input type="checkbox" name="jam" id="jam">
+                       джемы 
+                    </label>
+                </div>
+                <button class="filter-button" type="submit" value="Применить"> применить </button>
+                
+            </div>
+        </form>
+
             <ul>
                 <li class="ice-catalog1">
 
