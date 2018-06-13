@@ -43,86 +43,89 @@
                 </li>
             </ul>
         </nav>
-        
+
 
         <div class="search header-forms">
             <button class="search1">Поиск</button>
             <div class="div-search">
-                <input type="text" id="search-text" name="search-text">
-                <span>Что ищем?</span>
+                <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
+                    <input type="text" id="search-text" name="search-text" placeholder="Что ищем?">
+                </form>
             </div>
         </div>
 
         <div class="enter header-forms">
-            <button type="submit">Войти</button>
-            <form class="user" method="POST" action="#">
-                <p>
-                    <label for="user-login" class="visually-hidden">Электронная почта</label>
-                    <input id="user-login" type="text" name="login" placeholder="Электронная почта">
-                </p>
-                <p>
-                    <label for="user-password" class="visually-hidden">Пароль</label>
-                    <input id="user-password" type="password" name="password" placeholder="Пароль">
-                </p>
-                <span>Вход</span>
+            <button type="button">Войти</button>
+            <div class="header-fom-dropdown">
+                <form class="user" method="POST" action="https://echo.htmlacademy.ru">
+                    <p>
+                        <label for="user-login" class="visually-hidden">Электронная почта</label>
+                        <input id="user-login" type="text" name="login" placeholder="Электронная почта">
+                    </p>
+                    <p>
+                        <label for="user-password" class="visually-hidden">Пароль</label>
+                        <input id="user-password" type="password" name="password" placeholder="Пароль">
+                    </p>
+                    <button type="submit">Вход</button>
+                </form>
                 <p>
                     <a class="restore" href="#">Забыли пароль?</a>
                 </p>
                 <p>
                     <a class="new-registration" href="#">Новая регистрация</a>
                 </p>
-            </form>
+            </div>
         </div>
-
-        <div>
-            <div class="basket header-forms">
-                <a class="cage" href="#">Корзина</a>
+        <div class="basket header-forms">
+            <button type="button" class="cage" href="#">2 товара</button>
+            <div class="header-fom-dropdown">
+                <table>
+                    <tr>
+                        <td>
+                            Пломбир с апельсиновым джемом
+                        </td>
+                        <td>
+                            1,5 кг х 200руб.
+                        </td>
+                        <td>
+                            450 руб.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Клубнинчый пломбир с присыпкой
+                            <br> из белого шоколада
+                        </td>
+                        <td>
+                            1,5 кг х 300руб.
+                        </td>
+                        <td>
+                            450 руб.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            Итого:750 руб.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <a href="#" class="checkout">Оформить заказ</a>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
 
-        <table>
-            <tr>
-                <td>
-                    Пломбир с апельсиновым джемом
-                </td>
-                <td>
-                    1,5 кг х 200руб.
-                </td>
-                <td>
-                    450 руб.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Клубнинчый пломбир с присыпкой
-                    <br> из белого шоколада
-                </td>
-                <td>
-                    1,5 кг х 300руб.
-                </td>
-                <td>
-                    450 руб.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                    Итого:750 руб.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                    <a href="#" class="checkout">Оформить заказ</a>
-                </td>
-            </tr>
-        </table>
+
         <b class="time-work">С 10 до 20, ежедневно</b>
         <b class="number">8 812 450-25-25</b>
     </header>
@@ -154,14 +157,20 @@
                         </select>
                     </fieldset>
                     <fieldset class="filter">
-                        <legend>Цена: 100 руб. - 500 руб.</legend>
+                        <legend>
+                            Цена:
+                            <input type="text" name="min-price" value="100"> руб. -
+                            <input type="text" name="max-price" value="500"> руб.
+                        </legend>
                         <div class="wrapper">
-                            <input type="range" min="100" max="500" step="5" value="150">
-                            <input class="second-range" type="range" min="100" max="500" step="5" value="500">
+                            <div>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </div>
                         </div>
                     </fieldset>
-                    <div class="fat">
-                        <label>Жирность:</label>
+                    <fieldset>
+                        <legend>Жирность:</legend>
                         <label>
                             <input type="radio" name="fat" value="0%"> 0%
                         </label>
@@ -174,9 +183,9 @@
                         <label>
                             <input type="radio" name="fat" value="+30%"> выше 30%
                         </label>
-                    </div>
-                    <div class="inice">
-                        <label>Наполнители:</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Наполнители:</legend>
                         <label>
                             <input type="checkbox" name="chocolad" id="chocolaad"> шоколадные
                         </label>
@@ -192,7 +201,7 @@
                         <label>
                             <input type="checkbox" name="jam" id="jam"> джемы
                         </label>
-                    </div>
+                    </fieldset>
                     <button class="filter-button" type="submit" value="Применить"> применить </button>
 
                 </div>
