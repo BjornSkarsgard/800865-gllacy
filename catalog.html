@@ -16,13 +16,13 @@
         <nav class="main-navigator">
             <ul class="site-navigator">
                 <li>
-                    <a href="Catalog.html">Каталог</a>
+                    <a>Каталог</a>
                     <ul>
                         <li>
                             <a href="#">Новинки</a>
                         </li>
                         <li>
-                            <a href="#">Сливочное</a>
+                            <a href="catalog.html">Сливочное</a>
                         </li>
                         <li>
                             <a href="#">Щербеты</a>
@@ -43,38 +43,43 @@
                 </li>
             </ul>
         </nav>
-        <div class="user-navigation-search">
-            <div class="search">
-                <button class="search1">Поиск</button>
-                <div class="div-search">
-                    <input type="text" id="search-text" name="search-text">
-                    <span>Что ищем?</span>
-                </div>
+        
+
+        <div class="search header-forms">
+            <button class="search1">Поиск</button>
+            <div class="div-search">
+                <input type="text" id="search-text" name="search-text">
+                <span>Что ищем?</span>
             </div>
         </div>
-        <p>Вход</p>
-        <form class="user" method="POST" action="#">
-            <p>
-                <label for="user-login" class="visually-hidden">Электронная почта</label>
-                <input id="user-login" type="text" name="login" placeholder="Электронная почта">
-            </p>
-            <p>
-                <label for="user-password" class="visually-hidden">Пароль</label>
-                <input id="user-password" type="password" name="password" placeholder="Пароль">
-            </p>
+
+        <div class="enter header-forms">
             <button type="submit">Войти</button>
-            <p>
-                <a class="restore" href="#">Забыли пароль?</a>
-            </p>
-            <p>
-                <a class="new-registration" href="#">Новая регистрация</a>
-            </p>
-        </form>
+            <form class="user" method="POST" action="#">
+                <p>
+                    <label for="user-login" class="visually-hidden">Электронная почта</label>
+                    <input id="user-login" type="text" name="login" placeholder="Электронная почта">
+                </p>
+                <p>
+                    <label for="user-password" class="visually-hidden">Пароль</label>
+                    <input id="user-password" type="password" name="password" placeholder="Пароль">
+                </p>
+                <span>Вход</span>
+                <p>
+                    <a class="restore" href="#">Забыли пароль?</a>
+                </p>
+                <p>
+                    <a class="new-registration" href="#">Новая регистрация</a>
+                </p>
+            </form>
+        </div>
+
         <div>
-            <div class="basket">
+            <div class="basket header-forms">
                 <a class="cage" href="#">Корзина</a>
             </div>
         </div>
+
         <table>
             <tr>
                 <td>
@@ -130,72 +135,68 @@
                 <a href="catalog.html">Каталог</a>
             </li>
             <li>
-                <p>
-                    <a>Сливочное</a>
-                </p>
+
+                <a>Сливочное</a>
+
             </li>
         </ul>
         <section class="catalog-ice">
             <h1>Сливочное мороженое</h1>
             <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="sortirovka">
-                <lable for="popular">Сортировка</lable>
-                <select id="popular">
-                    <option>по популярности</option>
-                    <option>сначала недорогие</option>
-                    <option>сначала дорогие</option>
-                    <option>по жирности</option>
-                </select>
-                <div>
-                    <label>Цена: 100 руб.- 500 руб.</label>
-                    100<input type="range" id="select-price" name="select-price" min="100" max="500" step="1" value="250">500
+                <div class="sorting">
+                    <fieldset class="filter-category">
+                        <legend>Сортировка</legend>
+                        <select id="popular">
+                            <option value="popular">по популярности</option>
+                            <option value="cheap">сначала недорогие</option>
+                            <option value="expensive">сначала дорогие</option>
+                            <option value="fatness">по жирности</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="filter">
+                        <legend>Цена: 100 руб. - 500 руб.</legend>
+                        <div class="wrapper">
+                            <input type="range" min="100" max="500" step="5" value="150">
+                            <input class="second-range" type="range" min="100" max="500" step="5" value="500">
+                        </div>
+                    </fieldset>
+                    <div class="fat">
+                        <label>Жирность:</label>
+                        <label>
+                            <input type="radio" name="fat" value="0%"> 0%
+                        </label>
+                        <label>
+                            <input type="radio" name="fat" value="-10%"> до 10%
+                        </label>
+                        <label>
+                            <input type="radio" name="fat" value="-30%"> до 30%
+                        </label>
+                        <label>
+                            <input type="radio" name="fat" value="+30%"> выше 30%
+                        </label>
+                    </div>
+                    <div class="inice">
+                        <label>Наполнители:</label>
+                        <label>
+                            <input type="checkbox" name="chocolad" id="chocolaad"> шоколадные
+                        </label>
+                        <label>
+                            <input type="checkbox" name="sugar" id="sugar"> сахарные присыпки
+                        </label>
+                        <label>
+                            <input type="checkbox" name="fruit" id="fruit"> фрукты
+                        </label>
+                        <label>
+                            <input type="checkbox" name="sirop" id="sirop"> сиропы
+                        </label>
+                        <label>
+                            <input type="checkbox" name="jam" id="jam"> джемы
+                        </label>
+                    </div>
+                    <button class="filter-button" type="submit" value="Применить"> применить </button>
+
                 </div>
-                <div class="fat">
-                    <label>Жирность:</label>
-                    <label>
-                            <input type="radio" name="fat" value="0%"> 
-                            0% 
-                    </label>
-                    <label>
-                            <input type="radio" name="fat" value="-10%"> 
-                            до 10% 
-                    </label>
-                    <label>
-                            <input type="radio" name="fat" value="-30%"> 
-                            до 30% 
-                    </label>
-                    <label>
-                            <input type="radio" name="fat" value="+30%"> 
-                            выше 30% 
-                    </label>
-                </div>
-                <div class="inice">
-                    <label>Наполнители:</label>
-                    <label>
-                    <input type="checkbox" name="chocolad" id="chocolaad">
-                    шоколадные
-                    </label>
-                    <label>
-                        <input type="checkbox" name="sugar" id="sugar">
-                    сахарные присыпки    
-                    </label>
-                    <label>
-                     <input type="checkbox" name="fruit" id="fruit">
-                        фрукты
-                    </label>
-                    <label>
-                   <input type="checkbox" name="sirop" id="sirop">
-                        сиропы
-                    </label>
-                    <label>
-                    <input type="checkbox" name="jam" id="jam">
-                       джемы 
-                    </label>
-                </div>
-                <button class="filter-button" type="submit" value="Применить"> применить </button>
-                
-            </div>
-        </form>
+            </form>
 
             <ul>
                 <li class="ice-catalog1">
