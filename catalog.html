@@ -4,20 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси каталог</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-  <header class="catalog-header">
-    <div class="catalog-header-logo">
-      <a href="index.html">
-        <img src="img/index-logo.png" width="154" height="64" alt="Логотип магазина мороженного «Gllacy»">
-      </a>
-    </div>
+  <header class="main-header container">
+
+    <a class="main-header-logo">
+      <img src="img/index-logo.png" width="154" height="64" alt="Логотип магазина мороженного «Gllacy»">
+    </a>
     <nav class="main-navigator">
       <ul class="site-navigator">
         <li>
-          <a>Каталог</a>
-          <ul>
+          <a href="#" class="cat">Каталог</a>
+          <ul class="catalogg">
             <li>
               <a href="#">Новинки</a>
             </li>
@@ -35,43 +35,45 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="delivery">
           <a href="#">Доставка и оплата</a>
         </li>
-        <li>
-          <a href="#">О компании</a>
+        <li class="company">
+          <a href="#">О Компании</a>
         </li>
       </ul>
     </nav>
-    <div class="search header-forms">
-      <button class="search1">Поиск</button>
+    <div class="search">
+      <button class="search1"></button>
       <div class="div-search">
         <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
-          <input type="text" id="search-text" name="search-text" placeholder="Что ищем?">
+          <input type="text" id="search-text" name="search-text" placeholder="   Что ищем?">
         </form>
       </div>
     </div>
-    <div class="enter header-forms">
-      <button type="button">Войти</button>
-      <div class="header-fom-dropdown">
-        <form class="user" method="POST" action="https://echo.htmlacademy.ru">
-          <p>
-            <label for="user-login" class="visually-hidden">Электронная почта</label>
-            <input id="user-login" type="text" name="login" placeholder="Электронная почта">
-          </p>
-          <p>
-            <label for="user-password" class="visually-hidden">Пароль</label>
-            <input id="user-password" type="password" name="password" placeholder="Пароль">
-          </p>
-          <button type="submit">Вход</button>
-        </form>
+    <div class="user-enter dropdown">
+
+      <button href="#" type="button">Вход</button>
+
+      <form class="user" method="POST" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="user-login" class="visually-hidden">Электронная почта</label>
+          <input id="user-login" type="text" name="login" placeholder="Электронная почта">
+        </p>
+        <p>
+          <label for="user-password" class="visually-hidden">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <button type="submit">Войти</button>
         <p>
           <a class="restore" href="#">Забыли пароль?</a>
         </p>
         <p>
           <a class="new-registration" href="#">Новая регистрация</a>
         </p>
-      </div>
+      </form>
+    </div>
+    </div>
     </div>
     <div class="basket header-forms">
       <button type="button" class="cage">2 товара</button>
@@ -198,74 +200,87 @@
           <button class="filter-button" type="submit" value="Применить"> применить </button>
         </div>
       </form>
-      <ul>
-        <li class="ice-catalog1">
-          <img src="img/ice1.jpg" width="267" height="267" alt="Сливочное мороженное">
-          <p class="price1">310 Р/кг</p>
+    </section>
+    <section class="price">
+      <h2 class="visually-hidden">Примеры мороженного «Gllacy»</h2>
+      <ul class="icecream">
+        <li class="ice1">
+          <img class="ice11" src="img/ice1.jpg" width="267" height="267" alt="Сливочное мороженное">
+          <p class="price1">310 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </li>
-        <li class="ice-catalog2">
-          <img src="img/ice2.jpg" width="267" height="267" alt="шоколадное мороженное">
-          <p class="price1">380 Р/кг</p>
-          <a href="#" class="price-ice">Сливочно-кофейное с кусочками шоколада
-          </a>
+        <li class="ice2">
+          <img class="ice22" src="img/ice2.jpg" width="267" height="267" alt="шоколадное мороженное">
+          <p class="price1">380 Р</p>
+          <span>/кг</span>
+          <a href="#" class="price-ice">Сливочно-кофейное с кусочками шоколада</a>
         </li>
-        <li class="ice-catalog3">
-          <img src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное">
-          <p class="price1">355 Р/кг</p>
+        <li class="ice3">
+          <img class="ice33" src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное">
+          <p class="price1">355 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </li>
-        <li class="ice-catalog4">
-          <img src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-          <p class="price1">415 Р/кг</p>
+        <li class="ice4">
+          <img class="ice44" src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
+          <p class="price1">415 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочное крем-брюле с карамельное подливкой</a>
         </li>
-        <li class="ice-catalog5">
+        <li class="ice5">
           <img src="img/ice5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
-          <p class="price1">325 Р/кг</p>
+          <p class="price1">325 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочное с брусничным джемом
           </a>
         </li>
-        <li class="ice-catalog6">
+        <li class="ice6">
           <img src="img/ice6.jpg" width="267" height="267" alt="Сливочное-черничное с цельными ягодами черники">
-          <p class="price1">410 Р/кг</p>
+          <p class="price1">410 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочное-черничное с цельными ягодами черники</a>
         </li>
-        <li class="ice-catalog7">
+        <li class="ice7">
           <img src="img/ice7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-          <p class="price1">375 Р/кг</p>
+          <p class="price1">375 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочно-лимонное с карамельной присыпкой</a>
         </li>
-        <li class="ice-catalog8">
+        <li class="ice8">
           <img src="img/ice8.jpg" width="267" height="267" alt="Сливочно с шоколадной стружкой">
-          <p class="price1">375 Р/кг</p>
+          <p class="price1">375 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочно c шоколадной стружкой
           </a>
         </li>
-        <li class="ice-catalog9">
+        <li class="ice9">
           <img src="img/ice9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-          <p class="price1">440 Р/кг</p>
+          <p class="price1">440 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочно-ванильное с кусочками шоколада</a>
         </li>
-        <li class="ice-catalog10">
+        <li class="ice10">
           <img src="img/ice10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-          <p class="price1">435 Р/кг</p>
+          <p class="price1">435 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочное с ментоловым сиропом
           </a>
         </li>
-        <li class="ice-catalog11">
+        <li class="ice11">
           <img src="img/ice11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-          <p class="price1">355 Р/кг</p>
+          <p class="price1">355 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочное с кусочками черного шоколада
           </a>
         </li>
-        <li class="ice-catalog12">
+        <li class="ice12">
           <img src="img/ice12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-          <p class="price1">420 Р/кг</p>
+          <p class="price1">420 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочное с мятным сиропом
           </a>
         </li>
-      </ul>
     </section>
     <section class="page">
       <h2 class="visually-hidden">Переход по страницам каталога</h2>
@@ -293,7 +308,7 @@
       </nav>
     </section>
   </main>
-  <footer>
+  <footer class="container">
     <ul>
       <li class="social-btn social-btn-tw">
         <a href="#">Твиттер</a>
@@ -316,8 +331,6 @@
         <li>
           <a href="#">Наши документы</a>
         </li>
-      </ul>
-      <ul>
         <li>
           <a href=#>О производстве</a>
         </li>
@@ -331,6 +344,19 @@
       <p>Сделано в HTML Academy © 2017</p>
     </div>
   </footer>
+  <section class="popup">
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <div class="feedback-window">
+      <form class="feedback-form-window" method="POST" action="https://echo.htmlacademy.ru">
+        <span>Мы обязательно вам ответим!</span>
+        <input type="text" id="yourname" name="youname" placeholder="Как вас зовут?" required>
+        <input type="email" id="your-email" name="your-email" placeholder="Ваша почта для ответа?" required>
+        <input type="text" id="your-comment" name="your-comment" placeholder="Напишите что-нибудь..." required>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
 </body>
 
 </html>

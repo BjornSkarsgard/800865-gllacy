@@ -114,7 +114,7 @@ a.slide-btn {
   color: #ffffff;
 }
 
-c p:nth-last-child(2) {
+  .icecream span {
   font-size: 30px;
   line-height: 45px;
   font-weight: bold;
@@ -132,7 +132,7 @@ c p:nth-last-child(2) {
 .vaflya > h2 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 500;
   color:#323232;
 }
 
