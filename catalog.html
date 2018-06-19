@@ -10,7 +10,7 @@
 <body>
   <header class="main-header container">
 
-    <a class="main-header-logo">
+    <a href="/index.html" class="main-header-logo">
       <img src="img/index-logo.png" width="154" height="64" alt="Логотип магазина мороженного «Gllacy»">
     </a>
     <nav class="main-navigator">
@@ -77,17 +77,20 @@
     </div>
     <div class="basket header-forms">
       <button type="button" class="cage">2 товара</button>
-      <div class="header-fom-dropdown">
+      <div class="header-form-dropdown">
         <table>
           <tr>
             <td>
               Пломбир с апельсиновым джемом
             </td>
             <td>
-              1,5 кг х 200руб.
+              1,5 кг x
             </td>
             <td>
-              450 руб.
+              200руб.
+            </td>
+            <td>
+              300 руб.
             </td>
           </tr>
           <tr>
@@ -96,7 +99,10 @@
               <br> из белого шоколада
             </td>
             <td>
-              1,5 кг х 300руб.
+              1,5 кг х
+            </td>
+            <td>
+              300руб.
             </td>
             <td>
               450 руб.
@@ -127,7 +133,7 @@
     <b class="number">8 812 450-25-25</b>
   </header>
   <main>
-    <ul>
+    <ul class="link-pages">
       <li>
         <a href="index.html">Главная</a>
       </li>
@@ -143,7 +149,7 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="sorting">
           <fieldset class="filter-category">
-            <legend>Сортировка</legend>
+            <legend class="icecream-sorting">Сортировка</legend>
             <select id="popular">
               <option value="popular">по популярности</option>
               <option value="cheap">сначала недорогие</option>
@@ -152,7 +158,7 @@
             </select>
           </fieldset>
           <fieldset class="filter">
-            <legend>
+            <legend class="icecream-sorting">
               Цена:
               <input type="text" name="min-price" value="100"> руб. -
               <input type="text" name="max-price" value="500"> руб.
@@ -164,8 +170,8 @@
               </div>
             </div>
           </fieldset>
-          <fieldset>
-            <legend>Жирность:</legend>
+          <fieldset class="fillers">
+            <legend class="icecream-sorting">Жирность:</legend>
             <label>
               <input type="radio" name="fat" value="0%"> 0%
             </label>
@@ -179,8 +185,8 @@
               <input type="radio" name="fat" value="+30%"> выше 30%
             </label>
           </fieldset>
-          <fieldset>
-            <legend>Наполнители:</legend>
+          <fieldset class="fillers">
+            <legend class="icecream-sorting">Наполнители:</legend>
             <label>
               <input type="checkbox" name="chocolad" id="chocolaad"> шоколадные
             </label>

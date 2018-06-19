@@ -129,6 +129,10 @@ a.slide-btn {
   text-decoration: none;
 }
 
+.icecream li {
+  list-style: none;
+}
+
 .vaflya > h2 {
   font-size: 24px;
   line-height: 30px;
@@ -242,4 +246,132 @@ a.slide-btn {
   line-height: 24px;
   font-weight: bold;
   color: #fefefe;
+}
+
+
+
+
+
+
+
+
+/* Стили,специально добавленные для каталога */
+
+
+
+
+
+
+
+.basket .cage {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  color:#323232;
+}
+
+.header-form-dropdown table tr:nth-child(1n) td:nth-child(1n+3){
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.header-form-dropdown table tr:nth-last-child(1n+3) td:nth-child(3){
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.header-form-dropdown table tr:nth-last-child(3n+2) td:nth-child(3){
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.header-form-dropdown a {
+  font-size: 18;
+  line-height: 24px;
+  font-weight: bold;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.link-pages li {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  list-style: none;
+}
+
+.link-pages a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.catalog-ice h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color:#ffffff;
+}
+
+.icecream-sorting  {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color:#ffffff;
+}
+
+.filter-category select{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #323232;
+}
+
+option {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color:#323232
+}
+
+.fillers {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #ffffff
+}
+
+.filter-button {
+  font-size: 16px;
+  line-break: 18px;
+  font-weight: 600;
+  color:#ffffff;
+}
+
+.page li {
+  list-style: none;
+}
+
+.page a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.page a:hover {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #323232;
+  text-decoration: none;
 }
