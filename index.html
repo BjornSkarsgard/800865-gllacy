@@ -6,13 +6,23 @@
   <title>HTML Academy: Глейси</title>
   <style>
   </style>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- <link rel="stylesheet" type="text/css" href="./css/flex.css"> -->
 </head>
 
 <body>
+    <ul class="slides-switches hide">
+        <li class="slide-radio">
+          <button class="slide-btn1" type="button" id="btn-1" name="toggle">Первый слайд</button>
+        </li>
+        <li class="slide-radio">
+          <button class="slide-btn1" type="button" id="btn-2" name="toggle">Второй слайд</button>
+        </li>
+        <li class="slide-radio">
+          <button class="slide-btn1" type="button" id="btn-3" name="toggle">Третий слайд</button>
+        </li>
+      </ul>
   <header class="main-header container">
 
     <a class="main-header-logo">
@@ -63,7 +73,7 @@
       <form class="user" method="POST" action="https://echo.htmlacademy.ru">
         <p>
           <label for="user-login" class="visually-hidden">Электронная почта</label>
-          <input id="user-login" type="text" name="login" placeholder="Электронная почта">
+          <input  id="user-login" type="text" name="login" placeholder="Электронная почта">
         </p>
         <p>
           <label for="user-password" class="visually-hidden">Пароль</label>
@@ -81,7 +91,7 @@
     </div>
     <div>
       <div class="basket">
-        <a class="cage" href="#">Корзина</a>
+        <a class="cage" href="#" >Корзина</a>
       </div>
     </div>
     <b class="time-work">С 10 до 20, ежедневно</b>
@@ -89,48 +99,36 @@
   </header>
 
   <main class="container">
-    <div class="allslide">
-      <input type="radio" id="btn-1" name="toggle" checked>
-      <input type="radio" id="btn-2" name="toggle">
-      <input type="radio" id="btn-3" name="toggle">
-      <div class="slider-controls">
+    <div class="slider">
+      <div class="slider" id="slider1">
+        <p class="slide-title">
+          Крем-брюле и пломбир с малиновым джемом
+        </p>
+        <a class="slide-btn" href="#">Давайте оба!</a>
+      </div>
+      <div class="slider hide" id="slider2">
+        <p class="slide-title">
+          Шоколадный пломбир и лимонный сорбет
+        </p>
+        <a class="slide-btn" href="#">Давайте оба!</a>
+      </div>
+      <div class="slider hide" id="slider3">
+        <p class="slide-title">
+          Пломбир с помадкой и клубничный щербет
+        </p>
+        <a class="slide-btn" href="#">Давайте оба!</a>
+      </div>
+      <div class="slide-controls">
         <label for="btn-1"></label>
         <label for="btn-2"></label>
         <label for="btn-3"></label>
       </div>
-    <div class="slide-inner">
-      <div class="slider">
-        <div class="slider1" id="slider1">
-          <img src="/img/cream1.png" alt="первый слайд">
-          <p class="slide-title">
-            Крем-брюле и пломбир с малиновым джемом
-          </p>
-          <a class="slide-btn" href="#">Давайте оба!</a>
-        </div>
-        <div class="slider2 hide" id="slider2">
-          <img src="/img/cream2.png" alt="второй слайд">
-          <p class="slide-title">
-            Шоколадный пломбир и лимонный сорбет
-          </p>
-          <a class="slide-btn" href="#">Давайте оба!</a>
-        </div>
-        <div class="slider3 hide" id="slider3">
-          <img src="/img/cream3.png" alt="третий слайд">
-          <p class="slide-title">
-            Пломбир с помадкой и клубничный щербет
-          </p>
-          <a class="slide-btn" href="#">Давайте оба!</a>
-        </div>
-      </div>
     </div>
-  </div>
     <h1 class="visually-hidden">Магазин мороженного «Gllacy»</h1>
     <section class="banner1">
-      <div class="jam">
       <h2 class="for-free1">Малинка даром!</h2>
       <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
       <a href="#" class="want-a-jam">Хочу варенье!</a>
-    </div>
     </section>
     <section class="banner2">
       <h2 class="for-free2">Шоколадки даром!</h2>
@@ -142,26 +140,22 @@
       <ul class="icecream">
         <li class="ice1">
           <img class="ice11" src="img/ice1.jpg" width="267" height="267" alt="Сливочное мороженное">
-          <p class="price1">310 Р</p>
-          <span>/кг</span>
+          <p class="price1">310 Р</p><span>/кг</span>
           <a href="#" class="price-ice">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </li>
         <li class="ice2">
           <img class="ice22" src="img/ice2.jpg" width="267" height="267" alt="шоколадное мороженное">
-          <p class="price1">380 Р</p>
-          <span>/кг</span>
+          <p class="price1">380 Р</p><span>/кг</span>
           <a href="#" class="price-ice">Сливочно-кофейное с кусочками шоколада</a>
         </li>
         <li class="ice3">
           <img class="ice33" src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное">
-          <p class="price1">355 Р</p>
-          <span>/кг</span>
+          <p class="price1">355 Р</p><span>/кг</span>
           <a href="#" class="price-ice">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </li>
         <li class="ice4">
           <img class="ice44" src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-          <p class="price1">415 Р</p>
-          <span>/кг</span>
+          <p class="price1">415 Р</p><span>/кг</span>
           <a href="#" class="price-ice">Сливочное крем-брюле с карамельное подливкой</a>
         </li>
       </ul>
@@ -187,17 +181,13 @@
         в пути и позволяет сохранить превосходный вкус.
       </p>
     </section>
-
     <section class="news">
-      <div class="new">
       <h2>Новое в нашем блоге</h2>
       <a href="#">
         10 способов сервировки фруктовых щербетов к столу
       </a>
-    </div>
     </section>
     <section class="subscribe">
-      <div class="sub">
       <form class="subscribe-form" method="POST" action="https://echo.htmlacademy.ru">
         <h3 class="visually-hidden">Подписка на новости «Gllacy»</h3>
         <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
@@ -206,9 +196,7 @@
         <input type="email" id="email" name="email" placeholder="Электронная почта">
         <button type="submit">Отправить</button>
       </form>
-      </div>
     </section>
-
     <section class="map">
       <img src="img/map.jpg" width="1250" height="430" alt="карта местности">
       <div class="feedback-form">
@@ -223,18 +211,21 @@
       </div>
     </section>
   </main>
-  <footer class="container1">
-      <div class="share">
-
-          <a class="social social-tw" href="#"></a>
-
-          <a class="social social-it" href="#"></a>
-
-          <a class="social social-fb" href="#"></a>
-
-          <a class="social social-vk" href="#"></a>
-
-    </div>
+  <footer class="container">
+    <ul>
+      <li class="social-btn social-btn-tw">
+        <a href="#">Твиттер</a>
+      </li>
+      <li class="social-btn social-btn-in">
+        <a href="#">Инстаграм</a>
+      </li>
+      <li class="social-btn social-btn-fb">
+        <a href="#">Фейсбук</a>
+      </li>
+      <li class="social-btn social-btn-vk">
+        <a href="#">ВКонтакте</a>
+      </li>
+    </ul>
     <div class="table-footer-menu">
       <ul>
         <li>
