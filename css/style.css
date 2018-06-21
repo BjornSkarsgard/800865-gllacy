@@ -1,16 +1,18 @@
-body {
-    margin: 0px;
-    padding: 0px;
+  body {
+   margin: 0px;
+   padding: 0px;
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    font-family: "Roboto",Tahoma,sans-serif;
-    background-color: #849d8f;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 22px;
+   font-family: "Roboto",Tahoma,sans-serif;
+   background-color: #849d8f;
 
-  }
+ }
 
- .site-navigator li {
+
+
+  .site-navigator li {
    font-size: 16px;
    line-height: 18px;
    font-weight: bold;
@@ -18,7 +20,7 @@ body {
    list-style: none;
  }
 
- .site-navigator li a {
+  .site-navigator li a {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
@@ -27,7 +29,7 @@ body {
   text-decoration: none;
 }
 
-.catalogg li a {
+ .catalogg li a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -36,22 +38,112 @@ body {
   text-decoration: none;
 }
 
-.user button {
+  .btn-search {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("/img/lupa.svg") no-repeat 50% 50%;
+    background-color: #ffffff4f;
+    border-radius: 50%;
+  }
+
+  .btn-search:hover {
+    background: url("/img/lupa-hover.svg") no-repeat 50% 50%;
+    background-color: #ffffff;
+  }
+
+
+  .btn-enter {
+      display: inline-block;
+      padding: 9px 16px 9px 43px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      color: #ffffff;
+      vertical-align: top;
+      text-decoration: none;
+      background: url("/img/enter.svg") no-repeat 20% 50%;
+      background-color: #ffffff4f;
+      border-radius: 50px;
+      border: none;
+
+      cursor: pointer;
+    }
+
+   .btn-enter:hover {
+     color: #323232;
+     background: url("/img/enter-hover.svg") no-repeat 20% 50%;
+     background-color: #ffffff;
+    }
+
+
+
+
+
+
+ .site-enter {
+  display: inline-block;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  color: #fefefe;
+  padding: 10px 25px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100px;
+  color:#ffffff;
+  border:0;
+  text-shadow: 0 2px 5px rgba(160,32,11,.76);
+  text-decoration: none;
+  background: #f26843;
+  background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172,16,0,.64);
 }
 
-.user p {
+.site-enter:hover{
+  background: #ed7360;
+}
+
+.site-enter:active {
+  background: linear-gradient(to bottom,#e74a35 0%,#f26843 100%);
+  box-shadow: 0 -2px 2px rgba(172,16,0,.64)
+}
+
+ .user p {
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: #323232;
 }
-.user a {
+ .user a {
   color: #323232;
 }
+
+.cage-index {
+  display: inline-block;
+  padding: 9px 16px 9px 43px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  background: url("/img/cage-index.svg") no-repeat 20% 50%;
+  background-color: #ffffff4f;
+  border-radius: 50px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.cage-index:hover {
+ color: #323232;
+ background: url("/img/cage-index-hover.svg") no-repeat 20% 50%;
+ background-color: #ffffff;
+}
+
+
 
 .time-work {
   font-size: 14px;
@@ -75,36 +167,102 @@ body {
 }
 
 a.slide-btn {
+  display: inline-block;
   font-size: 32px;
   line-height: 44px;
   font-weight: bold;
+  padding: 10px 40px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100px;
   color:#ffffff;
+  text-shadow: 0 2px 5px rgba(160,32,11,.76);
   text-decoration: none;
+  background: #f26843;
+  background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172,16,0,.64);
 }
 
-.banner1 h2,
-.banner2 h2  {
+a.slide-btn:hover {
+
+  background: #ed7360;
+}
+
+a.slide-btn:active {
+  background: linear-gradient(to bottom,#e74a35 0%,#f26843 100%);
+  box-shadow: 0 -2px 2px rgba(172,16,0,.64)
+}
+
+
+
+.banner-jam h2,
+.banner-chocolate h2  {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
   color:#ffffff;
 }
 
-.banner1 p,
-.banner2 p {
+.banner-jam p,
+.banner-chocolate p {
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
   color:#ffffff;
 }
 
-.banner1 a,
-.banner2 a {
+.banner-jam a,
+.banner-chocolate a {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
   color:#ffffff;
   text-decoration: none;
+}
+
+.banner-jam {
+  width: 560px;
+  height: 229px;
+  background: url("/img/raspberries.jpg") no-repeat;
+  border-radius: 25px;
+}
+
+.banner-chocolate {
+  width: 560px;
+  height: 229px;
+  background: url("/img/chocolate.jpg") no-repeat;
+  border-radius: 25px;
+}
+
+.button-have {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 10px 23px 12px 21px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100px;
+  color:#ffffff;
+
+  text-shadow: 0 2px 5px rgba(160,32,11,.76);
+  text-decoration: none;
+  background: #f26843;
+  background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172,16,0,.64);
+}
+
+.button-have:hover{
+  background: #ed7360;
+}
+
+.button-have:active {
+  background: linear-gradient(to bottom,#e74a35 0%,#f26843 100%);
+  box-shadow: 0 -2px 2px rgba(172,16,0,.64)
+}
+
+.ice img {
+  border-radius: 50%;
 }
 
 .icecream p {
@@ -126,11 +284,18 @@ a.slide-btn {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-  text-decoration: none;
+
 }
 
 .icecream li {
   list-style: none;
+}
+
+.vaflya {
+  background: url("/img/vaflya.png") 50% 50%;
+  width: 1146px;
+  height: 306px;
+  border-radius: 15px;
 }
 
 .vaflya > h2 {
@@ -161,6 +326,13 @@ a.slide-btn {
   color: #323232;
 }
 
+.news {
+  background: url("/img/news.jpg") no-repeat 50% 50%;
+  width: 560px;
+  height: 220px;
+  border-radius: 15px;
+}
+
 .subscribe p {
   font-size: 16px;
   line-height: 22px;
@@ -169,11 +341,76 @@ a.slide-btn {
 }
 
 .subscribe button {
+  display: inline-block;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  color: #fefefe;
+  padding: 10px 14px 12px 17px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100px;
+  color:#ffffff;
+  border:0;
+  text-shadow: 0 2px 5px rgba(160,32,11,.76);
+  text-decoration: none;
+  background: #f26843;
+  background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172,16,0,.64);
 }
+
+.subscribe button:hover{
+  background: #ed7360;
+}
+
+.subscribe button:active {
+  background: linear-gradient(to bottom,#e74a35 0%,#f26843 100%);
+  box-shadow: 0 -2px 2px rgba(172,16,0,.64)
+}
+
+
+
+.subscribe-form {
+  position: relative;
+  top:5px;
+  left:6px;
+  background: #f8f7f4;
+  width: 549px;
+  height: 210px;
+  border-radius: 10px;
+}
+
+.subscribe {
+  background: url("/img/gradient.png") no-repeat;
+  width: 560px;
+  height: 220px;
+}
+
+.map button {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    padding: 10px 23px 12px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100px;
+    color:#ffffff;
+    border:0;
+    text-shadow: 0 2px 5px rgba(160,32,11,.76);
+    text-decoration: none;
+    background: #f26843;
+    background: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
+    box-shadow: 0 2px 2px rgba(172,16,0,.64);
+  }
+
+  .map button:hover{
+    background: #ed7360;
+  }
+
+  .map button:active {
+    background: linear-gradient(to bottom,#e74a35 0%,#f26843 100%);
+    box-shadow: 0 -2px 2px rgba(172,16,0,.64)
+  }
 
 .feedback-form h4 {
   font-size: 14px;
@@ -277,7 +514,7 @@ a.slide-btn {
   color: #323232;
 }
 
-.header-form-dropdown table tr:nth-last-child(1n+3) td:nth-child(3){
+/* .header-form-dropdown table tr:nth-last-child(1n+3) td:nth-child(3){
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
@@ -289,7 +526,7 @@ a.slide-btn {
   line-height: 18px;
   font-weight: bold;
   color: #323232;
-}
+} */
 
 .header-form-dropdown a {
   font-size: 18;
@@ -374,4 +611,13 @@ option {
   font-weight: 600;
   color: #323232;
   text-decoration: none;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

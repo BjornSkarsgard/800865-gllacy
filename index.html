@@ -4,25 +4,26 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <style>
-  </style>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic"
+    rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- <link rel="stylesheet" type="text/css" href="./css/flex.css"> -->
 </head>
 
 <body>
-    <ul class="slides-switches hide">
-        <li class="slide-radio">
-          <button class="slide-btn1" type="button" id="btn-1" name="toggle">Первый слайд</button>
-        </li>
-        <li class="slide-radio">
-          <button class="slide-btn1" type="button" id="btn-2" name="toggle">Второй слайд</button>
-        </li>
-        <li class="slide-radio">
-          <button class="slide-btn1" type="button" id="btn-3" name="toggle">Третий слайд</button>
-        </li>
-      </ul>
+  <ul class="slides-switches hide">
+    <li class="slide-radio">
+      <button class="slide-btn1" type="button" id="btn-1" name="toggle">Первый слайд</button>
+    </li>
+    <li class="slide-radio">
+      <button class="slide-btn1" type="button" id="btn-2" name="toggle">Второй слайд</button>
+    </li>
+    <li class="slide-radio">
+      <button class="slide-btn1" type="button" id="btn-3" name="toggle">Третий слайд</button>
+    </li>
+  </ul>
   <header class="main-header container">
 
     <a class="main-header-logo">
@@ -59,7 +60,7 @@
       </ul>
     </nav>
     <div class="search">
-      <button class="search1"></button>
+      <a class="btn-search" href="#"></a>
       <div class="div-search">
         <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
           <input type="text" id="search-text" name="search-text" placeholder="   Что ищем?">
@@ -68,18 +69,18 @@
     </div>
     <div class="user-enter dropdown">
 
-      <button href="#" type="button">Вход</button>
+      <a href="#" class="btn-enter">Вход</a>
 
       <form class="user" method="POST" action="https://echo.htmlacademy.ru">
         <p>
           <label for="user-login" class="visually-hidden">Электронная почта</label>
-          <input  id="user-login" type="text" name="login" placeholder="Электронная почта">
+          <input id="user-login" type="text" name="login" placeholder="Электронная почта" required>
         </p>
         <p>
           <label for="user-password" class="visually-hidden">Пароль</label>
-          <input id="user-password" type="password" name="password" placeholder="Пароль">
+          <input id="user-password" type="password" name="password" placeholder="Пароль" required>
         </p>
-        <button type="submit">Войти</button>
+        <button class="site-enter" type="submit" value="Войти">Войти</button>
         <p>
           <a class="restore" href="#">Забыли пароль?</a>
         </p>
@@ -91,7 +92,7 @@
     </div>
     <div>
       <div class="basket">
-        <a class="cage" href="#" >Корзина</a>
+        <a class="cage-index" href="#">Пусто</a>
       </div>
     </div>
     <b class="time-work">С 10 до 20, ежедневно</b>
@@ -104,7 +105,7 @@
         <p class="slide-title">
           Крем-брюле и пломбир с малиновым джемом
         </p>
-        <a class="slide-btn" href="#">Давайте оба!</a>
+        <a class="slide-btn " href="#">Давайте оба!</a>
       </div>
       <div class="slider hide" id="slider2">
         <p class="slide-title">
@@ -125,37 +126,41 @@
       </div>
     </div>
     <h1 class="visually-hidden">Магазин мороженного «Gllacy»</h1>
-    <section class="banner1">
+    <section class="banner-jam">
       <h2 class="for-free1">Малинка даром!</h2>
       <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-      <a href="#" class="want-a-jam">Хочу варенье!</a>
+      <a href="#" class="button-have">Хочу варенье!</a>
     </section>
-    <section class="banner2">
+    <section class="banner-chocolate">
       <h2 class="for-free2">Шоколадки даром!</h2>
       <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно. </p>
-      <a href="#" class="want-a-chocolate">Хочу шоколадки!</a>
+      <a href="#" class="button-have">Хочу шоколадки!</a>
     </section>
     <section class="price">
       <h2 class="visually-hidden">Примеры мороженного «Gllacy»</h2>
       <ul class="icecream">
-        <li class="ice1">
-          <img class="ice11" src="img/ice1.jpg" width="267" height="267" alt="Сливочное мороженное">
-          <p class="price1">310 Р</p><span>/кг</span>
+        <li class="ice">
+          <img class="ice-img" src="img/ice1.jpg" width="267" height="267" alt="Сливочное мороженное">
+          <p class="price1">310 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </li>
-        <li class="ice2">
-          <img class="ice22" src="img/ice2.jpg" width="267" height="267" alt="шоколадное мороженное">
-          <p class="price1">380 Р</p><span>/кг</span>
+        <li class="ice">
+          <img class="ice-img" src="img/ice2.jpg" width="267" height="267" alt="шоколадное мороженное">
+          <p class="price1">380 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочно-кофейное с кусочками шоколада</a>
         </li>
-        <li class="ice3">
-          <img class="ice33" src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное">
-          <p class="price1">355 Р</p><span>/кг</span>
+        <li class="ice">
+          <img class="ice-img" src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное">
+          <p class="price1">355 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </li>
-        <li class="ice4">
-          <img class="ice44" src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-          <p class="price1">415 Р</p><span>/кг</span>
+        <li class="ice">
+          <img class="ice-img" src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
+          <p class="price1">415 Р</p>
+          <span>/кг</span>
           <a href="#" class="price-ice">Сливочное крем-брюле с карамельное подливкой</a>
         </li>
       </ul>
