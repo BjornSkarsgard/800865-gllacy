@@ -367,8 +367,6 @@ a.slide-btn:active {
   box-shadow: 0 -2px 2px rgba(172,16,0,.64)
 }
 
-
-
 .subscribe-form {
   position: relative;
   top:5px;
@@ -621,3 +619,5 @@ option {
   height: 1px;
   margin: -1px;
 }
+
+
