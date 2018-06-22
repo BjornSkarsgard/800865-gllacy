@@ -58,13 +58,13 @@
       <form class="user" method="POST" action="https://echo.htmlacademy.ru">
         <p>
           <label for="user-login" class="visually-hidden">Электронная почта</label>
-          <input id="user-login" type="text" name="login" placeholder="Электронная почта">
+          <input id="user-login" type="text" name="login" placeholder="Электронная почта" required>
         </p>
         <p>
           <label for="user-password" class="visually-hidden">Пароль</label>
-          <input id="user-password" type="password" name="password" placeholder="Пароль">
+          <input id="user-password" type="password" name="password" placeholder="Пароль" required>
         </p>
-        <button type="submit">Войти</button>
+        <button class="site-enter" type="submit" value="Войти">Войти</button>
         <p>
           <a class="restore" href="#">Забыли пароль?</a>
         </p>
@@ -75,8 +75,8 @@
     </div>
     </div>
     </div>
-    <div class="basket header-forms">
-      <button type="button" class="cage">2 товара</button>
+    <div class="basket">
+      <a class="cage-index cage-catalog" href="#">2 товара</a>
       <div class="header-form-dropdown">
         <table>
           <tr>
