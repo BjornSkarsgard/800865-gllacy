@@ -10,7 +10,12 @@
 
  }
 
-
+ .main-header {
+   display: flex;
+   justify-content: center;
+   background-color: #e74a357a;
+   box-shadow: inset 0 0 0 2px rgb(200, 255, 0);
+  }
 
   .site-navigator li {
    font-size: 16px;
@@ -162,6 +167,16 @@
   color:#ffffff;
 }
 
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  background-color: #006bf73f;
+  box-shadow: inset 0 0 0 2px purple;
+
+}
+
 .slider .slide-title {
   font-size: 60px;
   line-height: 60.35px;
@@ -196,7 +211,28 @@ a.slide-btn:active {
   box-shadow: 0 -2px 2px rgba(172,16,0,.64)
 }
 
+.banners-flex{
+  display: flex;
+}
 
+.flex-banner-jam{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  padding-right: 13px;
+  justify-content: flex-end;
+  background-color: #fc066d41;
+  box-shadow: inset 0 0 0 2px rgb(0, 255, 234);
+}
+.flex-banner-chocolate {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  padding-left: 13px;
+  justify-content: flex-start;
+  background-color: #06fc3b41;
+  box-shadow: inset 0 0 0 2px rgb(229, 255, 0);
+}
 
 .banner-jam h2,
 .banner-chocolate h2  {
@@ -264,6 +300,21 @@ a.slide-btn:active {
   box-shadow: 0 -2px 2px rgba(172,16,0,.64)
 }
 
+.icecream {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #06fc6d41;
+  box-shadow: inset 0 0 0 2px rgb(230, 4, 4);
+}
+.ice {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: #fcf80641;
+  box-shadow: inset 0 0 0 2px rgb(0, 0, 0);
+}
+
 .ice img {
   border-radius: 50%;
 }
@@ -294,11 +345,23 @@ a.slide-btn:active {
   list-style: none;
 }
 
+.flex-vaflya {
+  display: flex;
+  background-color: #06a2fc41;
+  box-shadow: inset 0 0 0 2px rgb(0, 0, 0);
+  justify-content: center;
+}
+
 .vaflya {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 50%;
+
   background: url("../img/vaflya.png") 50% 50%;
   width: 1146px;
   height: 306px;
   border-radius: 15px;
+  box-shadow: inset 0 0 0 2px rgb(0, 255, 13);
 }
 
 .vaflya > h2 {
@@ -313,6 +376,13 @@ a.slide-btn:active {
   line-height: 22px;
   font-weight: 400;
   color:#323232;
+}
+
+.flex-news-sub {
+  display: flex;
+  justify-content: center;
+  background-color: #06fc8141;
+  box-shadow: inset 0 0 0 2px rgb(0, 0, 0);
 }
 
 .news h2 {
@@ -330,11 +400,20 @@ a.slide-btn:active {
 }
 
 .news {
+  display: flex;
+  padding-right: 13px;
   background: url("../img/news.jpg") no-repeat 50% 50%;
   width: 560px;
   height: 220px;
   border-radius: 15px;
+  box-shadow: inset 0 0 0 2px rgb(228, 0, 0);
 }
+
+.subscribe{
+  display:flex;
+  margin-left: 13px;
+  box-shadow: inset 0 0 0 2px rgb(34, 0, 228);
+  }
 
 .subscribe p {
   font-size: 16px;
@@ -380,11 +459,34 @@ a.slide-btn:active {
   border-radius: 10px;
 }
 
+
 .subscribe {
+
   background: url("../img/gradient.png") no-repeat 50% 50%;
   width: 560px;
   height: 220px;
 }
+
+.map-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: inset 0 0 0 2px rgb(228, 0, 0);
+  background-color: #00b7ff52;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  width: 302px;
+  height: 305px;
+  background: #fffefe;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 2px rgb(49, 0, 228);
+}
+
 
 .map button {
     display: inline-block;
@@ -447,6 +549,32 @@ a.slide-btn:active {
   line-height: 22px;
   font-weight: 400;
   color:#323232;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff5e0063;
+  box-shadow: inset 0 0 0 2px rgb(208, 255, 0);
+
+}
+
+.social-flex {
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 0 2px rgb(255, 0, 0);
+}
+
+.table-footer-menu {
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 0 2px rgb(0, 204, 255);
+}
+
+.htmlacademy-logo {
+  align-items: center;
+  display: flex;
+  box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
 }
 
 .table-footer-menu .heart {
@@ -651,6 +779,22 @@ button.filter-button {
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
+}
+
+
+.catalog-ice {
+  display: flex;
+  background-color: #00c3ff73;
+  justify-content: center;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 2px rgb(110, 228, 0);
+  background-color: #ff006252;
 }
 
 .catalog-ice h1 {
