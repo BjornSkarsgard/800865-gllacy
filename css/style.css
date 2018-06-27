@@ -323,6 +323,11 @@ a.slide-btn:active {
   display: block;
 }
 
+.slide-radio {
+ box-shadow: 500px 1px 1px black;
+ border-radius: 50%;
+}
+
 .banners-flex{
   display: flex;
   margin-top: 10px;
