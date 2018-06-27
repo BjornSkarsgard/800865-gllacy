@@ -258,6 +258,7 @@ display: none;
 
 }
 
+
 .slider {
   display: none;
   text-align: center;
@@ -323,10 +324,31 @@ a.slide-btn:active {
   display: block;
 }
 
-.slide-radio {
- box-shadow: 500px 1px 1px black;
- border-radius: 50%;
+.slide-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 4px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }
+
+.slide-controls {
+  position: absolute;
+  top:563px;
+  left: 380px;
+}
+#btn-1:checked ~ .slide-controls label[for="btn-1"]
+,
+#btn-2:checked ~ .slide-controls label[for="btn-2"]
+,
+#btn-3:checked ~ .slide-controls label[for="btn-3"]{
+  background-color: red;
+}
+
 
 .banners-flex{
   display: flex;
