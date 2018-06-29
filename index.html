@@ -13,9 +13,9 @@
 </head>
 
 <body>
-  <input class="slide-btn1  hide" type="radio" id="btn-1" name="toggle" checked>
+  <input class="slide-btn1 hide" type="radio" id="btn-1" name="toggle" checked>
   <input class="slide-btn2 hide" type="radio" id="btn-2" name="toggle">
-  <input class="slide-btn3  hide" type="radio" id="btn-3" name="toggle">
+  <input class="slide-btn3 hide" type="radio" id="btn-3" name="toggle">
   <header class="main-header container">
     <div class="header-top">
       <a class="main-header-logo">
@@ -23,7 +23,7 @@
       </a>
       <nav>
         <ul class="site-navigator">
-          <li>
+          <li class="catalog-navigator">
             <a href="#" class="cat">Каталог</a>
             <ul class="site-navigation-sub">
               <li>
@@ -51,18 +51,21 @@
           </li>
         </ul>
       </nav>
-      <div class="search dropdown">
+      <div class="search dropdown dropdown-btn">
+        <div class="div-search-btn">
         <a class="btn-search dropdown-btn" href="#"></a>
+        </div>
         <div class="div-search dropdown-content">
           <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
-            <input type="text" id="search-text" name="search-text" placeholder="   Что ищем?">
+            <input type="search" id="search-text" name="search-text" placeholder="   Что ищем?">
           </form>
         </div>
       </div>
       <div class="user-enter dropdown">
-
+        <div class="enter">
         <a href="#" class="btn-enter dropdown-btn">Вход</a>
-
+          </div>
+          <div class="form-enter">
         <form class="user dropdown-content" method="POST" action="https://echo.htmlacademy.ru">
           <p>
             <label for="user-login" class="visually-hidden">Электронная почта</label>
@@ -80,10 +83,11 @@
             <a class="new-registration" href="#">Новая регистрация</a>
           </p>
         </form>
+        </div>
       </div>
 
 
-      <div class="basket dropdown">
+      <div class="basket dropdown-btn">
         <a class="cage-index dropdown-btn" href="#">Пусто</a>
       </div>
 
@@ -130,19 +134,19 @@
 
       <section class="banner-jam">
         <div class="image jam">
-        <h2 class="for-free1">Малинка даром!</h2>
-        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="#" class="button-have button-jam">Хочу варенье!</a>
-      </div>
+          <h2 class="for-free1">Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a href="#" class="button-have button-jam">Хочу варенье!</a>
+        </div>
       </section>
 
 
       <section class="banner-chocolate">
         <div class="image chocolate">
-        <h2 class="for-free2">Шоколадки даром!</h2>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно. </p>
-        <a href="#" class="button-have">Хочу шоколадки!</a>
-          </div>
+          <h2 class="for-free2">Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно. </p>
+          <a href="#" class="button-have">Хочу шоколадки!</a>
+        </div>
       </section>
 
     </div>
@@ -151,30 +155,22 @@
       <ul class="icecream">
         <li class="ice">
           <img class="ice-img" src="img/ice1.jpg" width="267" height="267" alt="Сливочное мороженное">
-          <p class="price1">310 Р
-            <span>/кг</span>
-          </p>
+          <p class="price1">310 &#8381;<span>/кг</span></p>
           <a href="#" class="price-ice">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice2.jpg" width="267" height="267" alt="шоколадное мороженное">
-          <p class="price1">380 Р
-            <span>/кг</span>
-          </p>
+          <p class="price1">380 &#8381;<span>/кг</span></p>
           <a href="#" class="price-ice">Сливочно-кофейное с кусочками шоколада</a>
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное">
-          <p class="price1">355 Р
-            <span>/кг</span>
-          </p>
+          <p class="price1">355 &#8381;<span>/кг</span></p>
           <a href="#" class="price-ice">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-          <p class="price1">415 Р
-            <span>/кг</span>
-          </p>
+          <p class="price1">415 &#8381;<span>/кг</span></p>
           <a href="#" class="price-ice">Сливочное крем-брюле с карамельное подливкой</a>
         </li>
       </ul>
@@ -206,7 +202,8 @@
       <section class="news">
         <h2>Новое в нашем блоге</h2>
         <a href="#">
-          10 способов сервировки фруктовых щербетов<br> к столу
+          10 способов сервировки фруктовых щербетов
+          <br> к столу
         </a>
       </section>
       <section class="subscribe">
@@ -222,11 +219,13 @@
     </div>
     <div class="map-flex">
       <section class="map">
-        <img src="img/map.jpg" width="1200" height="430" alt="карта местности">
+        <img src="img/map.jpg" width="auto" alt="карта местности">
         <div class="feedback-form">
-          <h4>Адрес главного офиса и<br> офлайн-магазина</h4>
+          <h4>Адрес главного офиса и
+            <br> офлайн-магазина</h4>
           <strong>
-            ул. Большая Конюшенная <br>19/8, Санкт-Петербург
+            ул. Большая Конюшенная
+            <br>19/8, Санкт-Петербург
           </strong>
           <p>Для заказов по телефону:</p>
           <strong>8 812 450-25-25</strong>
@@ -239,41 +238,49 @@
   <footer class="container flex-footer">
     <ul class="social-flex">
       <li class="social-btn social-btn-tw">
-        <a href="#"><img class="tw" src="img/tw.svg" width="32px" height="32px" alt="твиттер"></a>
+        <a href="#">
+          <img class="tw" src="img/tw.svg" width="32px" height="32px" alt="твиттер">
+        </a>
       </li>
       <li class="social-btn social-btn-in">
-        <a href="#"><img class="it" src="img/it.svg" width="32px" height="32px" alt="инстаграм"></a>
+        <a href="#">
+          <img class="it" src="img/it.svg" width="32px" height="32px" alt="инстаграм">
+        </a>
       </li>
       <li class="social-btn social-btn-fb">
-        <a href="#"><img class="fb" src="img/fb.svg" width="32px" height="32px" alt="фейсбук"></a>
+        <a href="#">
+          <img class="fb" src="img/fb.svg" width="32px" height="32px" alt="фейсбук">
+        </a>
       </li>
       <li class="social-btn social-btn-vk">
-        <a href="#"><img class="vk" src="img/vk.svg" width="32px" height="32px" alt="вконтакте"></a>
+        <a href="#">
+          <img class="vk" src="img/vk.svg" width="32px" height="32px" alt="вконтакте">
+        </a>
       </li>
     </ul>
     <div class="table-footer-menu">
-      <table>
-        <tr>
-        <td>
+      <ul class="footer-list">
+        <li>
           <a class="heart" href="#">Для поставщиков</a>
-        </td>
-        <td>
+        </li>
+        <li>
           <a href="#">Наши документы</a>
-        </td>
-        </tr>
-        <tr>
-        <td>
+        </li>
+
+        <li>
           <a href=#>О производстве</a>
-        </td>
-        <td>
+        </li>
+        <li>
           <a href="#">Экологические стандарты</a>
-        </td>
-        </tr>
-      </table>
+        </li>
+      </ul>
     </div>
     <div class="htmlacademy-logo">
-      <img src="/img/html-logo.svg" width="108" height="39" alt="Логотип HTMLAcademy">
-      <p>Сделано в HTML Academy © 2017</p>
+      <a href="https://htmlacademy.ru">
+        <img src="/img/html-logo.svg" width="130" height="36" alt="Логотип HTMLAcademy">
+      </a>
+      <p>Сделано в
+        <a class="logo-href" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
     </div>
   </footer>
   <section class="popup hide">
