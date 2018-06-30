@@ -26,7 +26,7 @@
           <li class="catalog-navigator">
             <a href="#" class="cat">Каталог</a>
             <ul class="site-navigation-sub">
-              <li>
+              <li class="sub-menu-new">
                 <a href="#">Новинки</a>
               </li>
               <li>
@@ -63,7 +63,9 @@
       </div>
       <div class="user-enter dropdown">
         <div class="enter">
-        <a href="#" class="btn-enter dropdown-btn">Вход</a>
+            <ul class="test">
+              <li class="btn-enter-li"><a href="#" class="btn-enter dropdown-btn">Вход</a></li>
+            </ul>
           </div>
           <div class="form-enter">
         <form class="user dropdown-content" method="POST" action="https://echo.htmlacademy.ru">
@@ -151,6 +153,7 @@
 
     </div>
     <section class="price">
+      <div class="products">
       <h2 class="visually-hidden">Примеры мороженного «Gllacy»</h2>
       <ul class="icecream">
         <li class="ice">
@@ -174,6 +177,7 @@
           <a href="#" class="price-ice">Сливочное крем-брюле с карамельное подливкой</a>
         </li>
       </ul>
+      </div>
     </section>
     <div class="flex-vaflya">
       <section class="vaflya">
@@ -185,12 +189,12 @@
           временем технологий.
         </p>
         <p>
-          <img src="img/icon-list.svg" width="49" height="49" alt="листик">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты
-          и добавки произведены из натурального, экологически чистого сырья.
-        </p>
-        <p>
           <img src="img/icon-beacon.svg" width="49" height="49" alt="корова">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
           долговременное сотрудничество.
+        </p>
+        <p>
+          <img src="img/icon-list.svg" width="49" height="49" alt="листик">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты
+          и добавки произведены из натурального, экологически чистого сырья.
         </p>
         <p>
           <img src="img/icon-termometer.svg" width="49" height="49" alt="градусник"> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять
@@ -203,15 +207,15 @@
         <h2>Новое в нашем блоге</h2>
         <a href="#">
           10 способов сервировки фруктовых щербетов
-          <br> к столу
+           к <br> столу
         </a>
       </section>
       <section class="subscribe">
         <form class="subscribe-form" method="POST" action="https://echo.htmlacademy.ru">
           <h3 class="visually-hidden">Подписка на новости «Gllacy»</h3>
           <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
-            не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-          <label for="email">Электронная почта</label>
+            не спамить <br> и не слать всякой ненужной ерунды. Честно =) </p>
+          <label for="email visually-hidden"></label>
           <input type="email" id="email" name="email" placeholder="Электронная почта">
           <button type="submit">Отправить</button>
         </form>
@@ -219,7 +223,7 @@
     </div>
     <div class="map-flex">
       <section class="map">
-        <img src="img/map.jpg" width="auto" alt="карта местности">
+        <img src="img/map.jpg" width="1200px" alt="карта местности">
         <div class="feedback-form">
           <h4>Адрес главного офиса и
             <br> офлайн-магазина</h4>
