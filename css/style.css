@@ -616,6 +616,7 @@ background-color: #9d8b84;
 }
 
 
+
 .icecream {
   display: flex;
   flex-wrap: wrap;
@@ -629,10 +630,18 @@ background-color: #9d8b84;
 }
 
 .ice {
+  display: relative;
   width: 25%;
   padding: 0 13px;
   margin-bottom: 39px;
   margin: 0;
+}
+
+.ice:hover {
+  background-color: hsla(0,0%,100%,.2);
+  box-shadow: 0 -10px 20px 0 rgba(0,0,0,.4);
+  border-radius: 5px 5px 0 0;
+
 }
 
 .ice:nth-last-child(-n+4){
@@ -672,9 +681,37 @@ font-size: 16px;
   color: #ffffff;
 }
 
+.fast-see {
+  display: none;
+  position: absolute;
+  margin-left: -13px;
+  width: 292px;
+  height: 75px;
+}
 
+.ice:hover .fast-see{
 
+  display: block;
+  background-color: hsla(0,0%,100%,.2);
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,.4);
 
+}
+
+.fast-see:hover {
+
+   background-color: hsla(0,0%,100%,.2);
+
+  border-radius: 0 0 5px 5px;
+
+}
+
+.fast-see a {
+  position: absolute;
+  padding: 10px 17px;
+  top: -17px;
+  left: 46px;
+  white-space: nowrap;
+}
 
 
 
