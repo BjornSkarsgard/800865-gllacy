@@ -90,7 +90,7 @@
 
 
       <div class="basket dropdown-btn">
-        <a class="cage-index dropdown-btn" href="#">Пусто</a>
+        <a class="cage-index dropdown-btn " href="#">Пусто</a>
       </div>
 
     </div>
@@ -235,10 +235,13 @@
     </div>
     <div class="map-flex">
       <section class="map">
-        <img src="img/map.jpg" width="1200px" alt="карта местности">
+        <div class="map-google">
+          <iframe class=".map12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6726317779567!2d30.321752923272154!3d59.93757418414441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530654606660" width="1903" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+          <img src="img/map.jpg" width="1200px" alt="карта местности">
         <div class="feedback-form">
-          <h4>Адрес главного офиса и
-            <br> офлайн-магазина</h4>
+          <h4>Адрес главного офиса<br> и
+             офлайн-магазина</h4>
           <strong>
             ул. Большая Конюшенная
             <br>19/8, Санкт-Петербург
@@ -246,7 +249,7 @@
           <p>Для заказов по телефону:</p>
           <strong>8 812 450-25-25</strong>
           <p>(с 10 до 20 ежедневно)</p>
-          <button class="site-button feedback-button">Форма обратной связи</button>
+          <a href="#" class="site-button feedback-button popup-modal">Форма обратной связи</a>
         </div>
       </section>
     </div>
@@ -299,19 +302,75 @@
         <a class="logo-href" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
     </div>
   </footer>
-  <section class="popup hide">
+  <section class="popup">
     <h2 class="visually-hidden">Обратная связь</h2>
     <div class="feedback-window">
       <form class="feedback-form-window" method="POST" action="https://echo.htmlacademy.ru">
+
         <span>Мы обязательно вам ответим!</span>
-        <input type="text" id="yourname" name="youname" placeholder="Как вас зовут?" required>
-        <input type="email" id="your-email" name="your-email" placeholder="Ваша почта для ответа?" required>
-        <input type="text" id="your-comment" name="your-comment" placeholder="Напишите что-нибудь..." required>
+        <input type="text" id="yourname" name="youname" placeholder="Как вас зовут?" >
+        <input type="email" id="your-email" name="your-email" placeholder="Ваша почта для ответа?">
+        <textarea class="comment" name="your-comment" placeholder="Напишите что-нибудь..." ></textarea>
         <button type="submit">Отправить</button>
       </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </div>
   </section>
+  <div class="overlay"></div>
+  <script>
 
+      var link = document.querySelector(".popup-modal");
+      var popup = document.querySelector(".feedback-window");
+      var overlay = document.querySelector(".overlay");
+      var close = popup.querySelector(".modal-close");
+
+      var form = popup.querySelector(".feedback-window form");
+      var login = popup.querySelector("[name=youname]");
+      var password = popup.querySelector("[name=your-email]");
+      var comment = popup.querySelector("[name=your-comment]");
+
+
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        overlay.classList.add("modal-show");
+        login.focus();
+});
+
+close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    overlay.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !password.value || !comment.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      console.log("Нужно ввести логин и пароль");
+      popup.classList.add("modal-error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("login", login.value);
+      }
+    }
+
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        overlay.classList.remove("modal-show");
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+    </script>
 </body>
 
 </html>

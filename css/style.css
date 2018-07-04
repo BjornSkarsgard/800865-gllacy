@@ -103,6 +103,7 @@ display: none;
   text-align: left;
   background-color: #fbded8;
     border-radius: 0;
+
 }
 
 .site-navigator ul {
@@ -129,9 +130,16 @@ display: none;
 }
 
 
-.site-navigator a:hover{
+.site-navigator a:hover  {
   background: #f7f6f3;
   color: #323232;
+  transition: all .2s ease-in-out;
+}
+
+
+.site-navigator a:active {
+  background-color: #ededed;
+  transition: all .2s ease-in-out;
 }
 
 .catalog-navigator , .delivery , .company , .btn-enter{
@@ -141,7 +149,10 @@ display: none;
 .catalog-navigator:hover ul {
   margin-top: 7px;
   display: block;
+
+  transition: all .2s ease-in-out;
 }
+
 
 
 
@@ -149,8 +160,12 @@ display: none;
   text-align: left;
   background-color: #fbded8;
     border-radius: 0;
+    transition: all .2s ease-in-out;
 }
 
+.site-navigation-sub a:active{
+  background-color: #f6b5a5;
+}
 
 
 .dropdown .dropdown-content {
@@ -184,12 +199,14 @@ display: none;
   .btn-search:hover {
     background: url("../img/lupa-hover.svg") no-repeat 50% 50%;
     background-color: #ffffff;
+    transition: all .2s ease-in-out;
   }
 
   .search:hover .div-search {
     display: block;
     position: absolute;
     padding: 1px 1px 20px 1px;
+
   }
   .btn-enter {
       display: inline-block;
@@ -212,8 +229,9 @@ display: none;
    .btn-enter:hover {
      display: block;
      color: #323232;
-     background: url("../img/enter-hover.svg") no-repeat 20% 50%;
+     background: url("../img/enter-hover.svg") no-repeat 21% 49%;
      background-color: #ffffff;
+     transition: all .2s ease-in-out;
     }
 
 
@@ -226,6 +244,7 @@ display: none;
     height: 214px;
     background-color: #f8f7f4;
     border-radius: 10px;
+
 }
 
 .test {
@@ -298,6 +317,7 @@ input[type="search"] {
 
 .site-enter:hover{
   background: #ed7360;
+
 }
 
 .site-enter:active {
@@ -345,6 +365,7 @@ input[type="search"] {
  color: #323232;
  background: url("../img/cage-index-hover.svg") no-repeat 20% 50%;
  background-color: #ffffff;
+ transition: all .2s ease-in-out;
 }
 
 
@@ -437,6 +458,7 @@ a.slide-btn:active {
 .slide-btn3:checked ~ main .slide3 {
   display: block;
   opacity: 1;
+
 }
 
 /* .slide-btn2:checked ~ main .slide2 {
@@ -457,7 +479,7 @@ top: 0;
 left: 0;
 z-index: -2;
 background-color: #849d8f;
-
+transition: all .2s ease-in-out;
 }
 
 .slide-btn2:checked ~ main .slide2::before {
@@ -469,7 +491,7 @@ top: 0;
 left: 0;
 z-index: -2;
 background-color: #8996a6;
-
+transition: all .2s ease-in-out;
 
 }
 
@@ -482,6 +504,7 @@ top: 0;
 left: 0;
 z-index: -2;
 background-color: #9d8b84;
+transition: all .2s ease-in-out;
 }
 
 
@@ -496,8 +519,15 @@ background-color: #9d8b84;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
-
+  transition: all .2s ease-in-out;
 }
+
+.slide-controls label:hover {
+  background-color: rgba(237, 237, 237, 0.40);
+  transition: all .2s ease-in-out;
+}
+
+
 
 .slide-controls {
   position: absolute;
@@ -511,7 +541,7 @@ background-color: #9d8b84;
 ,
 .slide-btn3:checked ~ main label[for="btn-3"]{
   background-color: #ffffff;
-  transition: background-color 0.5s ease;
+  transition: all .2s ease-in-out;
 }
 
 .banner-jam{
@@ -806,6 +836,11 @@ font-size: 16px;
   text-decoration-line: underline;
 }
 
+.news a:hover {
+  color: #ed7360;
+  transition: all .2s ease-in-out;
+}
+
 
 .subscribe{
   display:flex;
@@ -890,29 +925,30 @@ input[type="email"] {
   display: flex;
   position: absolute;
   right: 380px;
-  top: 1950px;
+  top: 1945px;
   padding-left: 20px;
   flex-direction: column;
   align-items: flex-start;
-  width: 280px;
+  width: 300px;
   height: 305px;
   background: #fffefe;
-  border-radius: 10px;
+  border-radius: 15px;
 
 }
 
 
-.map button {
+.map .popup-modal {
     display: inline-block;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
-    padding: 10px 23px 12px 23px;
+    padding: 11px 26px 11px 27px;
     text-align: center;
     vertical-align: middle;
     border-radius: 100px;
     color:#ffffff;
     border:0;
+    margin-left: 5px;
     text-shadow: 0 2px 5px rgba(160,32,11,.76);
     text-decoration: none;
     background: #f26843;
@@ -920,13 +956,15 @@ input[type="email"] {
     box-shadow: 0 2px 2px rgba(172,16,0,.64);
   }
 
-  .map button:hover{
+  .map .popup-modal:hover{
     background: #ed7360;
+
   }
 
-  .map button:active {
+  .map .popup-modal:active {
     background: linear-gradient(to bottom,#e74a35 0%,#f26843 100%);
     box-shadow: 0 -2px 2px rgba(172,16,0,.64)
+
   }
 
 
@@ -935,7 +973,10 @@ input[type="email"] {
   line-height: 20px;
   font-weight: 400;
   color:#323232;
-  text-decoration: underline #323232;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 4px;
+  margin-bottom: 2px;
 }
 
 .feedback-form strong {
@@ -943,6 +984,8 @@ input[type="email"] {
   line-height: 24px;
   font-weight: bold;
   color:#323232;
+  padding-left: 4px;
+  margin-bottom: 4px;
 }
 
 .feedback-form p {
@@ -950,6 +993,8 @@ input[type="email"] {
   line-height: 20px;
   font-weight: 400;
   color:#323232;
+  padding-left: 4px;
+  margin-bottom: 5px;
 }
 
 .feedback-form strong:nth-of-type(2) {
@@ -957,6 +1002,7 @@ input[type="email"] {
   line-height: 22px;
   font-weight: bold;
   color:#323232;
+  margin-bottom: -11px;
 }
 
 .feedback-form p:nth-of-type(2) {
@@ -964,6 +1010,7 @@ input[type="email"] {
   line-height: 22px;
   font-weight: 400;
   color:#323232;
+  margin-bottom: 21px;
 }
 
 .flex-footer {
@@ -994,6 +1041,8 @@ input[type="email"] {
 
 .tw:hover {
   background-color: #1faee9;
+  transition: all .2s ease-in-out;
+
 }
 
 .it {
@@ -1003,6 +1052,7 @@ input[type="email"] {
 
 .it:hover {
   background-color: #517fa4;
+  transition: all .2s ease-in-out;
 }
 
 .fb {
@@ -1012,6 +1062,7 @@ input[type="email"] {
 
 .fb:hover {
   background-color: #3b5998;
+  transition: all .2s ease-in-out;
 }
 
 .vk {
@@ -1021,6 +1072,7 @@ input[type="email"] {
 
 .vk:hover {
   background-color: #45668e;
+  transition: all .2s ease-in-out;
 }
 
 
@@ -1054,8 +1106,9 @@ input[type="email"] {
 }
 
 .footer-list a:hover {
-  color:#f6b5a5;
+  color:#ffbc9e;
   border: none;
+  transition: all .2s ease-in-out;
 }
 
 .heart {
@@ -1072,7 +1125,8 @@ input[type="email"] {
 }
 
 .heart:hover::before {
-  color: #f6b5a5;
+  color: #ffbc9e;
+  transition: all .2s ease-in-out;
 }
 
 
@@ -1124,36 +1178,159 @@ border-bottom: none;
 }
 .htmlacademy-logo .logo-href:hover {
 
-  color: #f6b5a5;
-  border-bottom: 1px solid #f6b5a5;
+  color: #ffbc9e;
+  border-bottom: 1px solid #ffbc9e;
+  transition: all .2s ease-in-out;
 }
 
+
 .feedback-window {
+  display:none;
+  left: 50%;
+  top: 50%;
+  position: fixed;
   height: 442px;
   width: 477px;
   background: #f8f7f4;
   border-radius: 10px;
+  margin-left: -237px;
+  margin-top: -146px;
+  padding:15px 5px 0 5px;
+  z-index: 2;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(35, 31, 32, 0.3);
+  z-index: 1;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.feedback-window .modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  outline: none;
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+  padding: 0px;
+  margin: 0;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.feedback-window .modal-close:hover ,
+.feedback-window .modal-close:active {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  width: 22px;
+  height: 2px;
+
+  background-color: #231f20;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+
+
 .feedback-window span {
+  padding-left: 18px;
   font-size: 24px;
   line-height: 28px;
-  font-weight: normal;
+  font-weight: 500;
   color:#323232;
+  letter-spacing: 0.1px;
+}
+
+.feedback-window input[type="text"]{
+margin-top: 20px;
+font-size: 15px;
+padding-left: 13px;
+padding-right: 13px;
+letter-spacing: 0.9px;
+width: 266px;
+height: 45px;
+border: 1px solid #d3d3d2;
+margin-bottom: 0px;
+}
+
+.feedback-window input[type="email"] {
+  width: 266px;
+  height: 45px;
+  padding-right: 13px;
+  padding-left: 13px;
+  border: 1px solid #d3d3d2;
+  letter-spacing: 0.6px;
+  font-size: 15px;
+  margin-bottom: 19px;
+  margin-right: 10px;
+}
+
+.feedback-window textarea{
+  width: 427px;
+  height: 155px;
+  padding-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-right: 12px;
+  border: 1px solid #d3d3d2;
+  letter-spacing: 0.1px;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 18px;
+  resize: none;
+  border-radius: 5px;
 }
 
 .feedback-window button {
   display: inline-block;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   color: #fefefe;
-    padding: 10px 23px 12px 21px;
+  margin-left: 309px;
+    padding: 10px 23px 10px 25px;
     text-align: center;
     vertical-align: middle;
     border-radius: 100px;
     color:#ffffff;
     border:0;
+    border-radius: 30px;
     text-shadow: 0 2px 5px rgba(160,32,11,.76);
     text-decoration: none;
     background: #f26843;
@@ -1172,12 +1349,25 @@ border-bottom: none;
 
 
 
-
-
 /* Стили,специально добавленные для каталога */
 
 
+a.cat-index {
+  color: #ffffff;
+  background-color: #d07058;
+}
+a.cat-index:hover {
+  color: #323232;
+  background-color: #ffffff;
+}
 
+ li.cream {
+  background-color: #d07058;
+}
+
+.cream a {
+  color: #ffffff;
+}
 
 .header-form-dropdown {
   width: 541px;
@@ -1239,6 +1429,7 @@ button.filter-button {
 .button-sorting:hover{
   color: #323232;
   background: #ffffff;
+  transition: all 0.5s ease;
 }
 
 .filter-button:active,
@@ -1246,6 +1437,7 @@ button.filter-button {
   background: #eaeaea;
   border: 2px solid  #eaeaea;
   box-shadow: 0 -2px 2px #696969;
+  transition: all 0.5s ease;
 }
 
 
@@ -1267,6 +1459,13 @@ button.filter-button {
   font-weight: 600;
   color:#323232;
 }
+
+.cage-index-catalog {
+  color: #323232;
+  background: url("../img/cage-index-hover.svg") no-repeat 20% 50%;
+  background-color: #ffffff;
+  transition: all .2s ease-in-out;
+ }
 
 .basket:hover .header-form-dropdown{
   display: block;
@@ -1341,6 +1540,18 @@ button.filter-button {
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.breadcrumbs-link:hover {
+  color: #f6b5a5;
+  transition: all 0.2s ease;
+}
+
+
+.breadcrumbs-link::after {
+  content: "\00BB";
+  position: relative;
+  right: -10px;
 }
 
 
@@ -1418,6 +1629,10 @@ button.filter-button {
 
 }
 
+.filter-category select:hover {
+  color: #323232;
+}
+
 option {
   font-size: 14px;
   line-height: 16px;
@@ -1432,7 +1647,7 @@ option {
     color: #ffffff;
     width: 439px;
     margin-left: -1px;
-    margin-top: -1px;
+    margin-top: -4px;
 }
 
 .fillers-radio {
@@ -1449,6 +1664,50 @@ option {
   list-style: none;
 }
 
+.fats-radio {
+  margin-right: 36px;
+}
+
+.fillers-fats-radio {
+  position: relative;
+  left: -2px;
+  padding-left: 25px;
+  margin-left: 10px;
+
+  cursor: pointer;
+}
+
+.fillers-fats-radio input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: -2px;
+  left: -8px;
+
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 4px solid white;
+
+}
+
+
+.fillers-fats-radio input[type="radio"]:checked + .radio-indicator::before {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+
+}
+
+
+
+
+
 fieldset{
   border: none;
 }
@@ -1464,12 +1723,72 @@ fieldset{
   margin-top: -36px;
 }
 
+.fillers-chekbox {
+  margin-right: -33px;
+  margin-left: 0px;
+}
+
+.filler-box {
+  position: relative;
+  left: -15px;
+  padding-left: 33px;
+  top: 1px;
+
+  cursor: pointer;
+}
+
+.filler-box input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0px;
+  left: 8px;
+
+  width: 20px;
+  height: 20px;
+  margin-left: -9px;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+.filler-box input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 3px;
+
+  width: 4px;
+  height:6px;
+  background-color: white;
+}
+
+.filler-box input[type="checkbox"]:checked + .checkbox-indicator::after{
+content: "";
+position: absolute;
+top: -4px;
+left: 11px;
+
+width: 4px;
+height:20px;
+background-color: white;
+}
+.filler-box input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(-45deg);
+
+}
+
+.filler-box input[type="checkbox"]:checked + .checkbox-indicator::after{
+  transform: rotate(45deg);
+  border-radius: 10px;
+}
+
+
+
 .icecream-sorting-sweet {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 0;
-  width: 670px;
+  width: 700px;
+  height: 34px;;
   border-radius: 15px;
  background-color: rgba(255, 255, 255, 0.2);
  padding: 7px 16px;
@@ -1532,6 +1851,7 @@ button.button-sorting {
   text-decoration: none;
   background-color: white;
   border-radius: 50%;
+
 }
 
 .paginator a:last-child {
@@ -1561,4 +1881,55 @@ button.button-sorting {
 
 .footer-catalog {
   margin-top: 7px;
+}
+
+.map-google {
+position: absolute;
+left: 0;
+}
+
+
+
+
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

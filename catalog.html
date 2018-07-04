@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси каталог</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 <body>
@@ -16,12 +17,12 @@
       <nav>
         <ul class="site-navigator">
           <li class="catalog-navigator">
-            <a href="#" class="cat">Каталог</a>
+            <a href="#" class="cat cat-index">Каталог</a>
             <ul class="site-navigation-sub">
               <li class="sub-menu-new">
                 <a href="#">Новинки</a>
               </li>
-              <li>
+              <li class="cream">
                 <a href="catalog.html">Сливочное</a>
               </li>
               <li>
@@ -84,7 +85,7 @@
 
 
       <div class="basket basket-cage dropdown-btn">
-        <a class="cage-index cage-catalog" href="#">2 товара</a>
+        <a class="cage-index cage-catalog cage-index-catalog" href="#">2 товара</a>
         <div class="header-form-dropdown hide">
           <table>
             <tr class="cart-row">
@@ -156,10 +157,10 @@
   <main class="container">
     <ul class="link-pages">
       <li>
-        <a href="index.html">Главная</a>
+        <a class="breadcrumbs-link" href="index.html">Главная</a>
       </li>
       <li>
-        <a href="catalog.html">Каталог</a>
+        <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
       </li>
       <li>
         <a>Сливочное</a>
@@ -196,46 +197,72 @@
               <span>Жирность:</span>
             </legend>
             <ul class="fillers-radio">
-              <li>
-                <input type="radio" name="fat" value="0%"> 0%
+              <li class="fats-radio">
+                <label class="fillers-fats-radio">
+                    <input type="radio" name="fat" class="visually-hidden" value="0%">
+                    <span class="radio-indicator"></span>
+                    0%
+                </label>
               </li>
-              <li>
-                <input type="radio" name="fat" value="-10%"> до 10%
+              <li class="fats-radio">
+                  <label class="fillers-fats-radio">
+                <input type="radio" name="fat" class="visually-hidden" value="-10%">
+                <span class="radio-indicator"></span>
+                 до 10%
+                </label>
               </li>
-              <li>
-                <input type="radio" name="fat" value="-30%"> до 30%
+              <li class="fats-radio">
+                  <label class="fillers-fats-radio">
+                <input type="radio" name="fat" class="visually-hidden" value="-30%">
+                <span class="radio-indicator"></span>
+                 до 30%
+                </label>
               </li>
-              <li>
-                <input type="radio" name="fat" value="+30%"> свыше 30%
+              <li class="fats-radio">
+                  <label class="fillers-fats-radio">
+                <input type="radio" name="fat" class="visually-hidden" value="+30%">
+                <span class="radio-indicator"></span>
+                 выше 30%
+                </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="fillers">
             <legend class="icecream-sorting">Наполнители:</legend>
             <ul class="icecream-sorting-sweet">
-              <li>
-                <label>
-                  <input type="checkbox" name="chocolad" id="chocolaad"> шоколадные
+              <li class="fillers-chekbox">
+                <label class="filler-box">
+                  <input type="checkbox" class="visually-hidden" name="chocolad" id="chocolaad">
+                  <span class="checkbox-indicator"></span>
+                   шоколадные
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="sugar" id="sugar"> сахарные присыпки
+              <li class="fillers-chekbox">
+                <label class="filler-box">
+                  <input type="checkbox" class="visually-hidden" name="sugar" id="sugar">
+                  <span class="checkbox-indicator"></span>
+                   сахарные присыпки
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="fruit" id="fruit"> фрукты
+              <li class="fillers-chekbox">
+                <label class="filler-box">
+                  <input type="checkbox" class="visually-hidden" name="fruit" id="fruit">
+                  <span class="checkbox-indicator"></span>
+                   фрукты
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="sirop" id="sirop"> сиропы
+              <li class="fillers-chekbox">
+                <label class="filler-box">
+                  <input type="checkbox" class="visually-hidden" name="sirop" id="sirop">
+                  <span class="checkbox-indicator"></span>
+                   сиропы
                 </label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="jam" id="jam"> джемы
+              <li class="fillers-chekbox">
+                <label class="filler-box">
+                  <input type="checkbox" class="visually-hidden" name="jam" id="jam">
+                  <span class="checkbox-indicator"></span>
+                   джемы
                 </label>
               </li>
             </ul>
