@@ -1535,7 +1535,7 @@ button.filter-button {
   list-style: none;
 }
 
-.link-pages a {;
+.link-pages a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -1591,7 +1591,7 @@ button.filter-button {
   font-size: 14px;
   margin-left: 14px;
 }
-}
+
 
 .icecream-sorting-fats  {
   display: flex;
