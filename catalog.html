@@ -55,7 +55,7 @@
       </div>
       <div class="user-enter dropdown">
         <div class="enter">
-          <ul class="test">
+          <ul class="user-enter-list">
             <li class="btn-enter-li">
               <a href="#" class="btn-enter dropdown-btn">Вход</a>
             </li>
@@ -93,44 +93,44 @@
         <div class="header-form-dropdown hide">
           <form class="cart flex flex--column" action="https://echo.htmlacademy.ru" method="POST">
           <h3 class="visually-hidden">Корзина</h3>
-          <table class="cart__products">
-              <caption class="cart__total">Итого: 750 руб.</caption>
+          <table class="cart-products">
+              <caption class="cart-total">Итого: 750 руб.</caption>
               <tbody>
-                <tr class="cart__row visually-hidden">
-                    <th class="cart__col-header">Удалить товар</th>
-                    <th class="cart__col-header">Изображение товара</th>
-                    <th class="cart__col-header">Наименование товара</th>
-                    <th class="cart__col-header">Количество (вес)</th>
-                    <th class="cart__col-header">Цена</th>
-                    <th class="cart__col-header">Стоимость</th>
+                <tr class="cart-row visually-hidden">
+                    <th class="cart-col-header">Удалить товар</th>
+                    <th class="cart-col-header">Изображение товара</th>
+                    <th class="cart-col-header">Наименование товара</th>
+                    <th class="cart-col-header">Количество (вес)</th>
+                    <th class="cart-col-header">Цена</th>
+                    <th class="cart-col-header">Стоимость</th>
                 </tr>
-                <tr class="cart__row">
-                  <td class="cart__td cart__td--remove">
-                    <button class="button button--remove" type="button" name="cart-button-remove" id="cart-button-remove-1" >
+                <tr class="cart-row">
+                  <td class="cart-td cart-td-remove">
+                    <button class="button button-remove" type="button" name="cart-button-remove" id="cart-button-remove-1" >
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </td>
-                  <td class="cart__td cart__td--img">
-                    <img class="cart__image" src="img/ice1.jpg" alt="Апельсиновый джем" width="35" height="35">
+                  <td class="cart-td cart-td--img">
+                    <img class="cart-image" src="img/ice1.jpg" alt="Апельсиновый джем" width="35" height="35">
                   </td>
-                  <td class="cart__td cart__name">Пломбир с апельсиновым джемом</td>
-                  <td class="cart__td cart__quantity">1,5 кг х</td>
-                  <td class="cart__td cart__price">200 руб</td>
-                  <td class="cart__td cart__subtotal">300 руб</td>
+                  <td class="cart-td cart-name">Пломбир с апельсиновым джемом</td>
+                  <td class="cart-td cart-quantity">1,5 кг х</td>
+                  <td class="cart-td cart-price">200 руб</td>
+                  <td class="cart-td cart-subtotal">300 руб</td>
                   </tr>
-                  <tr class="cart__row">
-                    <td class="cart__td cart__td--remove">
-                      <button class="button button--remove" type="button" name="cart-button-remove" id="cart-button-remove-2" >
+                  <tr class="cart-row">
+                    <td class="cart-td cart-td-remove">
+                      <button class="button button-remove" type="button" name="cart-button-remove" id="cart-button-remove-2" >
                           <span class="visually-hidden">Удалить</span>
                       </button>
                     </td>
-                    <td class="cart__td cart__td--img">
-                      <img class="cart__image" src="img/ice3.jpg" alt="Клубника с белым шоколадом" width="35" height="35">
+                    <td class="cart-td cart-td--img">
+                      <img class="cart-image" src="img/ice3.jpg" alt="Клубника с белым шоколадом" width="35" height="35">
                     </td>
-                    <td class="cart__td cart__name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td class="cart__td cart__quantity">1,5 кг х</td>
-                    <td class="cart__td cart__price">300 руб</td>
-                    <td class="cart__td cart__subtotal">450 руб</td>
+                    <td class="cart-td cart-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="cart-td cart-quantity">1,5 кг х</td>
+                    <td class="cart-td cart-price">300 руб</td>
+                    <td class="cart-td cart-subtotal">450 руб</td>
                   </tr>
               </tbody>
           </table>
@@ -268,7 +268,7 @@
       <ul class="icecream">
         <li class="ice">
           <img class="ice-img" src="img/ice1.jpg" width="267" height="267" alt="Сливочное мороженное">
-          <p class="price1">310 &#8381;
+          <p class="sell">310 &#8381;
             <span>/кг</span>
           </p>
           <a href="#" class="price-ice">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -278,7 +278,7 @@
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice2.jpg" width="267" height="267" alt="шоколадное мороженное">
-          <p class="price1">380 &#8381;
+          <p class="sell">380 &#8381;
             <span>/кг</span>
           </p>
           <a href="#" class="price-ice">Сливочно-кофейное с кусочками шоколада</a>
@@ -288,7 +288,7 @@
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное">
-          <p class="price1">355 &#8381;
+          <p class="sell">355 &#8381;
             <span>/кг</span>
           </p>
           <a href="#" class="price-ice">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -298,7 +298,7 @@
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-          <p class="price1">415 &#8381;
+          <p class="sell">415 &#8381;
             <span>/кг</span>
           </p>
           <a href="#" class="price-ice">Сливочное крем-брюле с карамельное подливкой</a>
@@ -308,7 +308,7 @@
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
-          <p class="price1">325 &#8381;
+          <p class="sell">325 &#8381;
             <span>/кг</span>
           </p>
           <a href="#" class="price-ice">Сливочное с брусничным джемом
@@ -319,7 +319,7 @@
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice6.jpg" width="267" height="267" alt="Сливочное-черничное с цельными ягодами черники">
-          <p class="price1">410 &#8381;
+          <p class="sell">410 &#8381;
             <span>/кг</span>
           </p>
           <a href="#" class="price-ice">Сливочное-черничное с цельными ягодами черники</a>
@@ -329,7 +329,7 @@
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-          <p class="price1">375 &#8381;
+          <p class="sell">375 &#8381;
             <span>/кг</span>
           </p>
           <a href="#" class="price-ice">Сливочно-лимонное с карамельной присыпкой</a>
@@ -339,7 +339,7 @@
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice8.jpg" width="267" height="267" alt="Сливочно с шоколадной стружкой">
-          <p class="price1">375 &#8381;
+          <p class="sell">375 &#8381;
             <span>/кг</span>
           </p>
           <a href="#" class="price-ice">Сливочно c шоколадной стружкой
@@ -350,7 +350,7 @@
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-          <p class="price1">440 &#8381;
+          <p class="sell">440 &#8381;
             <span>/кг</span>
           </p>
           <a href="#" class="price-ice">Сливочно-ванильное с кусочками шоколада</a>
@@ -360,7 +360,7 @@
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-          <p class="price1">435 &#8381;
+          <p class="sell">435 &#8381;
             <span>/кг</span>
           </p>
 
@@ -384,7 +384,7 @@
         </li>
         <li class="ice">
           <img class="ice-img" src="img/ice12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-          <p class="price1">420 &#8381;
+          <p class="sell">420 &#8381;
             <span>/кг</span>
           </p>
 
