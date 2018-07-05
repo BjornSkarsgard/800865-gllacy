@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси каталог</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
 
 <body>
@@ -85,64 +84,58 @@
 
 
       <div class="basket basket-cage dropdown-btn">
-        <a class="cage-index cage-catalog cage-index-catalog" href="#">2 товара</a>
-        <div class="header-form-dropdown hide">
-          <table>
-            <tr class="cart-row">
-              <td class="td-image cart-td table-first-line">
-                <img class="cart-image" src="/img/ice1.jpg" alt="Пломбир с апельсиновым джемом-картинка" width="32px" height="32px">
-              </td>
-              <td class="table-name cart-td table-first-line">
-                Пломбир с апельсиновым джемом
-              </td>
-              <td class="table-kg cart-td table-first-line">
-                1,5 кг x
-              </td>
-              <td class="cell cart-td table-first-line">
-                200руб.
-              </td>
-              <td class="table-cell cart-td table-first-line">
-                300 руб.
-              </td>
-            </tr>
-            <tr>
-              <td class="td-image cart-td">
-                <img src="/img/ice3.jpg" alt="Клубнинчый пломбир-картинка" width="32px" height="32px">
-              </td>
+        <ul class="btn-cage-list">
+          <li class="btn-cage">
+              <a class="cage-index cage-catalog cage-index-catalog" href="#">2 товара</a>
+          </li>
+        </ul>
 
-              <td class="table-name cart-td">
-                Клубнинчый пломбир с присыпкой
-                <br> из белого шоколада
-              </td>
-              <td class="table-kg cart-td">
-                1,5 кг х
-              </td>
-              <td class="cell cart-td">
-                300руб.
-              </td>
-              <td class="table-cell cart-td">
-                450 руб.
-              </td>
-            </tr>
-            <tr>
-              <td>&nbsp;
-              </td>
-              <td>&nbsp;
-              </td>
-              <td class="price-cage cart-td">
-                Итого:750 руб.
-              </td>
-            </tr>
-            <tr>
-              <td>&nbsp;
-              </td>
-              <td>&nbsp;
-              </td>
-              <td>
-                <a href="#" class="checkout">Оформить заказ</a>
-              </td>
-            </tr>
+        <div class="header-form-dropdown hide">
+          <form class="cart flex flex--column" action="https://echo.htmlacademy.ru" method="POST">
+          <h3 class="visually-hidden">Корзина</h3>
+          <table class="cart__products">
+              <caption class="cart__total">Итого: 750 руб.</caption>
+              <tbody>
+                <tr class="cart__row visually-hidden">
+                    <th class="cart__col-header">Удалить товар</th>
+                    <th class="cart__col-header">Изображение товара</th>
+                    <th class="cart__col-header">Наименование товара</th>
+                    <th class="cart__col-header">Количество (вес)</th>
+                    <th class="cart__col-header">Цена</th>
+                    <th class="cart__col-header">Стоимость</th>
+                </tr>
+                <tr class="cart__row">
+                  <td class="cart__td cart__td--remove">
+                    <button class="button button--remove" type="button" name="cart-button-remove" id="cart-button-remove-1" >
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </td>
+                  <td class="cart__td cart__td--img">
+                    <img class="cart__image" src="img/ice1.jpg" alt="Апельсиновый джем" width="35" height="35">
+                  </td>
+                  <td class="cart__td cart__name">Пломбир с апельсиновым джемом</td>
+                  <td class="cart__td cart__quantity">1,5 кг х</td>
+                  <td class="cart__td cart__price">200 руб</td>
+                  <td class="cart__td cart__subtotal">300 руб</td>
+                  </tr>
+                  <tr class="cart__row">
+                    <td class="cart__td cart__td--remove">
+                      <button class="button button--remove" type="button" name="cart-button-remove" id="cart-button-remove-2" >
+                          <span class="visually-hidden">Удалить</span>
+                      </button>
+                    </td>
+                    <td class="cart__td cart__td--img">
+                      <img class="cart__image" src="img/ice3.jpg" alt="Клубника с белым шоколадом" width="35" height="35">
+                    </td>
+                    <td class="cart__td cart__name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="cart__td cart__quantity">1,5 кг х</td>
+                    <td class="cart__td cart__price">300 руб</td>
+                    <td class="cart__td cart__subtotal">450 руб</td>
+                  </tr>
+              </tbody>
           </table>
+          <button class="button button-have button-table" type="submit" name="cart-button" >Оформить заказ</button>
+          </form>
         </div>
       </div>
 
@@ -179,19 +172,18 @@
               <option value="fatness">по жирности</option>
             </select>
           </fieldset>
-          <fieldset class="filter">
-            <legend class="icecream-sorting">
-              Цена:
-              <input type="numb" name="min-price" value="100"> руб. -
-              <input type="numb" name="max-price" value="500"> руб.
-            </legend>
-            <div class="wrapper">
-              <div>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+          <fieldset class="filter-item">
+              <legend class="price-range">Цена: 100 руб. – 500 руб.</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
               </div>
-            </div>
-          </fieldset>
+            </fieldset>
           <fieldset class="fillers-fats">
             <legend class="icecream-sorting-fats">
               <span>Жирность:</span>
@@ -199,30 +191,30 @@
             <ul class="fillers-radio">
               <li class="fats-radio">
                 <label class="fillers-fats-radio">
-                    <input type="radio" name="fat" class="visually-hidden" value="0%">
-                    <span class="radio-indicator"></span>
-                    0%
+                  <input type="radio" name="fat" class="visually-hidden" value="0%">
+                  <span class="radio-indicator"></span>
+                  0%
                 </label>
               </li>
               <li class="fats-radio">
-                  <label class="fillers-fats-radio">
-                <input type="radio" name="fat" class="visually-hidden" value="-10%">
-                <span class="radio-indicator"></span>
-                 до 10%
+                <label class="fillers-fats-radio">
+                  <input type="radio" name="fat" class="visually-hidden" value="-10%">
+                  <span class="radio-indicator"></span>
+                  до 10%
                 </label>
               </li>
               <li class="fats-radio">
-                  <label class="fillers-fats-radio">
-                <input type="radio" name="fat" class="visually-hidden" value="-30%">
-                <span class="radio-indicator"></span>
-                 до 30%
+                <label class="fillers-fats-radio">
+                  <input type="radio" name="fat" class="visually-hidden" value="-30%">
+                  <span class="radio-indicator"></span>
+                  до 30%
                 </label>
               </li>
               <li class="fats-radio">
-                  <label class="fillers-fats-radio">
-                <input type="radio" name="fat" class="visually-hidden" value="+30%">
-                <span class="radio-indicator"></span>
-                 выше 30%
+                <label class="fillers-fats-radio">
+                  <input type="radio" name="fat" class="visually-hidden" value="+30%">
+                  <span class="radio-indicator"></span>
+                  выше 30%
                 </label>
               </li>
             </ul>
@@ -234,35 +226,35 @@
                 <label class="filler-box">
                   <input type="checkbox" class="visually-hidden" name="chocolad" id="chocolaad">
                   <span class="checkbox-indicator"></span>
-                   шоколадные
+                  шоколадные
                 </label>
               </li>
               <li class="fillers-chekbox">
                 <label class="filler-box">
                   <input type="checkbox" class="visually-hidden" name="sugar" id="sugar">
                   <span class="checkbox-indicator"></span>
-                   сахарные присыпки
+                  сахарные присыпки
                 </label>
               </li>
               <li class="fillers-chekbox">
                 <label class="filler-box">
                   <input type="checkbox" class="visually-hidden" name="fruit" id="fruit">
                   <span class="checkbox-indicator"></span>
-                   фрукты
+                  фрукты
                 </label>
               </li>
               <li class="fillers-chekbox">
                 <label class="filler-box">
                   <input type="checkbox" class="visually-hidden" name="sirop" id="sirop">
                   <span class="checkbox-indicator"></span>
-                   сиропы
+                  сиропы
                 </label>
               </li>
               <li class="fillers-chekbox">
                 <label class="filler-box">
                   <input type="checkbox" class="visually-hidden" name="jam" id="jam">
                   <span class="checkbox-indicator"></span>
-                   джемы
+                  джемы
                 </label>
               </li>
             </ul>
@@ -281,7 +273,7 @@
           </p>
           <a href="#" class="price-ice">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -291,7 +283,7 @@
           </p>
           <a href="#" class="price-ice">Сливочно-кофейное с кусочками шоколада</a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -301,7 +293,7 @@
           </p>
           <a href="#" class="price-ice">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -311,7 +303,7 @@
           </p>
           <a href="#" class="price-ice">Сливочное крем-брюле с карамельное подливкой</a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -322,7 +314,7 @@
           <a href="#" class="price-ice">Сливочное с брусничным джемом
           </a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -332,7 +324,7 @@
           </p>
           <a href="#" class="price-ice">Сливочное-черничное с цельными ягодами черники</a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -342,7 +334,7 @@
           </p>
           <a href="#" class="price-ice">Сливочно-лимонное с карамельной присыпкой</a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -353,7 +345,7 @@
           <a href="#" class="price-ice">Сливочно c шоколадной стружкой
           </a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -363,7 +355,7 @@
           </p>
           <a href="#" class="price-ice">Сливочно-ванильное с кусочками шоколада</a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -375,7 +367,7 @@
           <a href="#" class="price-ice">Сливочное с ментоловым сиропом
           </a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -387,7 +379,7 @@
           <a href="#" class="price-ice">Сливочное с кусочками черного шоколада
           </a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
         <li class="ice">
@@ -399,9 +391,10 @@
           <a href="#" class="price-ice">Сливочное с мятным сиропом
           </a>
           <div class="fast-see">
-              <a class="button button-have" href="#">Быстрый просмотр</a>
+            <a class="button button-have" href="#">Быстрый просмотр</a>
           </div>
         </li>
+        </ul>
     </section>
     <section class="page">
       <h2 class="visually-hidden">Переход по страницам каталога</h2>
@@ -422,22 +415,22 @@
     <ul class="social-flex">
       <li class="social-btn social-btn-tw">
         <a href="#">
-          <img class="tw" src="img/tw.svg" width="38px" height="38px" alt="твиттер">
+          <img class="tw" src="img/tw.svg" width="38" height="38" alt="твиттер">
         </a>
       </li>
       <li class="social-btn social-btn-in">
         <a href="#">
-          <img class="it" src="img/it.svg" width="38px" height="38px" alt="инстаграм">
+          <img class="it" src="img/it.svg" width="38" height="38" alt="инстаграм">
         </a>
       </li>
       <li class="social-btn social-btn-fb">
         <a href="#">
-          <img class="fb" src="img/fb.svg" width="38px" height="38px" alt="фейсбук">
+          <img class="fb" src="img/fb.svg" width="38" height="38" alt="фейсбук">
         </a>
       </li>
       <li class="social-btn social-btn-vk">
         <a href="#">
-          <img class="vk" src="img/vk.svg" width="38px" height="38px" alt="вконтакте">
+          <img class="vk" src="img/vk.svg" width="38" height="38" alt="вконтакте">
         </a>
       </li>
     </ul>
