@@ -621,7 +621,7 @@ transition: all .2s ease-in-out;
   vertical-align: middle;
   border-radius: 100px;
   color:#ffffff;
-  float: right;
+
   margin-right: 19px;
   margin-top: 27px;
   text-shadow: 0 2px 5px rgba(160,32,11,.76);
@@ -660,17 +660,26 @@ transition: all .2s ease-in-out;
 }
 
 .ice {
-  display: relative;
+  position: relative;
   width: 25%;
-  padding: 0 13px;
+  /* padding: 0 13px; */
   margin-bottom: 39px;
   margin: 0;
+  min-height: 1px;
 }
 
-.ice:hover {
+.ice > div{
+  padding: 7px 13px 20px 13px;
+}
+
+.ice:hover > div {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: hsla(0,0%,100%,.2);
   box-shadow: 0 -10px 20px 0 rgba(0,0,0,.4);
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
+  z-index: 2;
 
 }
 
@@ -709,38 +718,40 @@ font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
+  margin-bottom: 11px;
+  height: 44px;
+  overflow: hidden;
+}
+
+.ice:hover .price-ice {
+  height: auto;
 }
 
 .fast-see {
   display: none;
-  position: absolute;
+  /* position: absolute;
   margin-left: -13px;
   width: 292px;
-  height: 75px;
+  height: 75px; */
 }
 
 .ice:hover .fast-see{
 
   display: block;
-  background-color: hsla(0,0%,100%,.2);
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,.4);
+  /* background-color: hsla(0,0%,100%,.2);
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,.4); */
 
 }
 
-.fast-see:hover {
 
-   background-color: hsla(0,0%,100%,.2);
-
-  border-radius: 0 0 5px 5px;
-
-}
 
 .fast-see a {
-  position: absolute;
-  padding: 10px 17px;
-  top: -17px;
-  left: 46px;
-  white-space: nowrap;
+  display: block;
+margin: 0 auto;
+width: 200px;
+padding: 0;
+height: 45px;
+line-height: 45px;
 }
 
 
