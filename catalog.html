@@ -16,10 +16,10 @@
       <nav>
         <ul class="site-navigator">
           <li class="catalog-navigator">
-            <a href="#" class="cat cat-index">Каталог</a>
+            <a href="#" class="cat cat-index menu">Каталог</a>
             <ul class="site-navigation-sub">
               <li class="sub-menu-new">
-                <a href="#">Новинки</a>
+                <a class="sub-link" href="#">Новинки</a>
               </li>
               <li class="cream">
                 <a href="catalog.html">Сливочное</a>
@@ -36,10 +36,10 @@
             </ul>
           </li>
           <li class="delivery">
-            <a href="#">Доставка и оплата</a>
+            <a href="#" class="menu">Доставка и оплата</a>
           </li>
           <li class="company">
-            <a href="#">О Компании</a>
+            <a href="#" class="menu">О Компании</a>
           </li>
         </ul>
       </nav>
@@ -49,7 +49,7 @@
         </div>
         <div class="div-search dropdown-content">
           <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
-            <input type="search" id="search-text" name="search-text" placeholder="   Что ищем?">
+            <input type="search" id="search-text" name="search-text" placeholder="Что ищем?">
           </form>
         </div>
       </div>
@@ -265,7 +265,7 @@
     </section>
     <section class="price">
       <h2 class="visually-hidden">Примеры мороженного «Gllacy»</h2>
-      <ul class="icecream">
+      <ul class="icecream ice-catalog">
         <li class="ice">
           <div>
             <img class="ice-img" src="img/ice1.jpg" width="267" height="267" alt="Сливочное мороженное">
@@ -424,13 +424,29 @@
       <h2 class="visually-hidden">Переход по страницам каталога</h2>
       <nav>
         <div class="paginator">
-          <a href="#" class="first-page">&#x2039;</a>
-          <a href="#" class="1page">1</a>
-          <a href="#" class="2page">2</a>
-          <a href="#" class="3page">3</a>
-          <a href="#" class="4page">4</a>
-          <a href="#" class="5page">5</a>
-          <a href="#" class="first-page">&#x203A;</a>
+          <ol class="paginator-list">
+            <li class="paginator-item">
+              <a class="paginator-link first-page not-light" href="#"></a>
+            </li>
+            <li class="paginator-item">
+              <a class="paginator-link not-light " href="#" class="1page">1</a>
+            </li>
+            <li class="paginator-item">
+              <a class="paginator-link" href="#" class="2page">2</a>
+            </li>
+            <li class="paginator-item">
+              <a class="paginator-link" href="#" class="3page">3</a>
+            </li>
+            <li class="paginator-item">
+              <a class="paginator-link" href="#" class="4page">4</a>
+            </li>
+            <li class="paginator-item">
+              <a class="paginator-link" href="#" class="5page">5</a>
+            </li>
+            <li class="paginator-item">
+              <a class="paginator-link last-page not-light " href="#"></a>
+            </li>
+          </ol>
         </div>
       </nav>
     </section>
@@ -476,11 +492,11 @@
       </ul>
     </div>
     <div class="htmlacademy-logo">
-      <a href="https://htmlacademy.ru">
+      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
         <img src="img/html-logo.svg" width="130" height="36" alt="Логотип HTMLAcademy">
       </a>
       <p>Сделано в
-        <a class="logo-href" href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+        <a class="logo-href" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2017</p>
     </div>
   </footer>
   <section class="popup hide">
