@@ -161,16 +161,19 @@ a.menu {
 
 a.sub-link{
   font-weight: 700;
- padding: 6px 15px;
+ padding: 0 15px;
+ line-height: 38px;
 }
 
-a.sub-link::before
+a.sub-link::after
 {
+  display: block;
   content: "";
-  position: absolute;
-  bottom: 119px;
-  left: 6px;
-  width: calc(100% - 15px);
+  /* position: absolute; */
+  /* bottom: 0px;
+  left: 6px; */
+  width: 100%;
+  margin: 0 auto;
   height: 1px;
   background-color: rgba(50,50,50,.2);
 }
@@ -654,13 +657,14 @@ transition: all .2s ease-in-out;
 .jam {
   background: url("../img/raspberries.jpg") 22% 52%;
   border-radius: 15px;
-
+  background-color: #b31832;
 
 }
 
 .chocolate {
   background: url("../img/chocolate.jpg") 81% 47%;
   border-radius: 15px;
+  background-color: #663412;
 }
 
 .button-have {
@@ -845,7 +849,7 @@ line-height: 45px;
   width: 1146px;
   height: 306px;
   border-radius: 15px;
-
+  background-color: #fae7c3;
 }
 
 .waffle > h2 {
@@ -897,6 +901,7 @@ line-height: 45px;
   height: 220px;
   border-radius: 15px;
   margin-right: 13px;
+  background-color: white;
 }
 
 .news h2 {
@@ -1867,6 +1872,7 @@ button.filter-button {
     margin-right: 14px;
     margin-left: 14px;
     margin-top: 1px;
+
 }
 
 
@@ -1882,6 +1888,7 @@ button.filter-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: none;
 }
 
 .filter-category::after{
