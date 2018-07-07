@@ -782,7 +782,7 @@ ice-catalog{
     width: 61px;
     height: 61px;
     vertical-align: baseline;
-    background-image: url(/img/hit.png);
+    background-image: url("img/hit.png");
     background-repeat: no-repeat;
 }
 
@@ -970,6 +970,7 @@ line-height: 45px;
   padding-left: 20px;
   padding-top: 13px;
   margin-bottom: 35px;
+  padding-right: 20px;
 }
 
 input[type="email"] {
@@ -1029,7 +1030,7 @@ input[type="email"]::placeholder{
 
 .subscribe {
 
-  background: url("../img/gradient.png") repeat 100% 100%;
+  background: url("../img/gradient.jpg") repeat 100% 100%;
   width: 50%;
   border-radius: 15px;
 }
@@ -1168,44 +1169,49 @@ input[type="email"]::placeholder{
    margin-right: 11px;
 }
 
+
 .tw {
   border: 3px solid #ddd;
   border-radius: 100px;
+  opacity: 0.8;
 }
 
 .tw:hover {
-  background-color: #1faee9;
+  opacity: 1;
   transition: all .2s ease-in-out;
 
 }
 
 .it {
+  opacity: 0.8;
   border: 3px solid #ddd;
   border-radius: 100px;
 }
 
 .it:hover {
-  background-color: #517fa4;
+  opacity: 1;
   transition: all .2s ease-in-out;
 }
 
 .fb {
+  opacity: 0.8;
   border: 3px solid #ddd;
   border-radius: 100px;
 }
 
 .fb:hover {
-  background-color: #3b5998;
+  opacity: 1;
   transition: all .2s ease-in-out;
 }
 
 .vk {
+  opacity: 0.8;
   border: 3px solid #ddd;
   border-radius: 100px;
 }
 
 .vk:hover {
-  background-color: #45668e;
+  opacity: 1;
   transition: all .2s ease-in-out;
 }
 
@@ -2044,6 +2050,7 @@ fieldset{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  flex
   border: none;
   font-size: 16px;
   line-height: 18px;
@@ -2057,27 +2064,27 @@ fieldset{
 }
 
 .fillers-chekbox {
-  margin-right: -33px;
-  margin-left: 0px;
+  margin-right: -4px;
+  margin-left: 0;
+
 }
 
 .filler-box {
   position: relative;
-  left: -15px;
-  padding-left: 33px;
+  left: -2px;
+  padding-left: 43px;
   top: 1px;
-
   cursor: pointer;
+  margin-right: 13px;
 }
 
 .filler-box input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 0px;
-  left: 8px;
-
+  left: 7px;
   width: 20px;
   height: 20px;
-  margin-left: -9px;
+  margin-left: 5px;
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 3px;
 }
@@ -2126,11 +2133,10 @@ background-color: white;
   flex-direction: row;
   justify-content: space-around;
   margin: 0;
-  width: 700px;
   height: 34px;;
   border-radius: 15px;
  background-color: rgba(255, 255, 255, 0.2);
- padding: 7px 16px;
+ padding: 7px 8px;
  margin-top: -6px;
 }
 
