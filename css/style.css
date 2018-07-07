@@ -30,7 +30,7 @@ html {
    min-width: 900px;
    max-width: 1200px;
    width: 100%;
-   /* width: 1200px; */
+   width: 1200px;
    margin: 0 auto;
    padding: 0 28px;
  }
@@ -207,6 +207,7 @@ a.sub-link::after
 }
 .basket {
   margin-left: 0px;
+  position: relative;
 }
 
 
@@ -769,6 +770,10 @@ ice-catalog{
   border-radius: 50%;
 }
 
+.ice-img{
+  height: auto;
+}
+
 .hit-image{
   position: absolute;
     top: 70px;
@@ -916,7 +921,7 @@ line-height: 45px;
   display: flex;
   flex-direction: column;
   background: url("../img/news.jpg") no-repeat 50% 50%;
-  width: 560px;
+  width: 50%;
   border-radius: 15px;
   margin-right: 13px;
   background-color: white;
@@ -964,12 +969,15 @@ line-height: 45px;
   color: #5a5a5a;
   padding-left: 20px;
   padding-top: 13px;
+  margin-bottom: 35px;
 }
 
 input[type="email"] {
   font-size: 20px;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  margin-right: 1px;
   padding: 13px;
   height: 46px;
   width: 370px;
@@ -987,9 +995,9 @@ input[type="email"]::placeholder{
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  padding: 10px 14px 12px 17px;
+  padding: 10px 16px 11px 19px;;
   right: -6px;
-  top:-3px;
+  top:-2px;
   text-align: center;
   vertical-align: middle;
   border-radius: 100px;
@@ -1012,21 +1020,18 @@ input[type="email"]::placeholder{
 }
 
 .subscribe-form {
-  position: relative;
-  top:5px;
-  left:6px;
   background: #f8f7f4;
-  width: 549px;
-  height: 210px;
+  width: 100%;
+  margin: 5px;
   border-radius: 10px;
 }
 
 
 .subscribe {
 
-  background: url("../img/gradient.png") no-repeat 50% 50%;
-  width: 560px;
-  height: 220px;
+  background: url("../img/gradient.png") repeat 100% 100%;
+  width: 50%;
+  border-radius: 15px;
 }
 
 .map-flex{
@@ -1059,7 +1064,6 @@ input[type="email"]::placeholder{
   flex-direction: column;
   align-items: flex-start;
   width: 300px;
-  height: 305px;
   background: #fffefe;
   border-radius: 15px;
 
@@ -1072,6 +1076,7 @@ input[type="email"]::placeholder{
     line-height: 24px;
     font-weight: bold;
     padding: 11px 26px 11px 27px;
+    margin-bottom: 30px;
     text-align: center;
     vertical-align: middle;
     border-radius: 100px;
@@ -1594,8 +1599,8 @@ button.filter-button {
  .basket:hover .header-form-dropdown {
   display: block;
   position: absolute;
-  right: 375px;
-  top: 59px;
+  right: 0px;
+  top: 36px;
   width: 540px;
   height: 242px;
   font-size: 13px;
@@ -1758,8 +1763,9 @@ button.filter-button {
 }
 
 .button-table {
-  margin: 16px;
-    margin-top: -1px;
+  margin-left: 357px;
+    margin-right: 0;
+    margin-top: 0px;
     padding: 9px 12px 10px 12px;
     border: none;
     border-radius: 20px;
@@ -1863,6 +1869,7 @@ button.filter-button {
   font-weight: bold;
   color: #ffffff;
   margin-top: -14px;
+  margin-bottom: 29px;
 }
 
 .icecream-sorting  {
@@ -2124,6 +2131,7 @@ background-color: white;
   border-radius: 15px;
  background-color: rgba(255, 255, 255, 0.2);
  padding: 7px 16px;
+ margin-top: -6px;
 }
 
 button.button-sorting {
@@ -2153,7 +2161,7 @@ button.button-sorting {
   justify-content: flex-end;
   margin-left: -5px;
   margin-top: 49px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   padding-bottom: 28px;
   border-bottom: 1px solid rgba(255,255,255,.2);
 }
@@ -2253,7 +2261,7 @@ button.button-sorting {
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
-  width: 1px;
+
   height: 1px;
   margin: -1px;
 }
@@ -2264,7 +2272,7 @@ button.button-sorting {
 
 .map-google {
 position: absolute;
-left: 0;
+left: auto;
 }
 
 .map-google iframe {
