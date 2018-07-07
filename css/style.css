@@ -30,6 +30,7 @@ html {
    min-width: 900px;
    max-width: 1200px;
    width: 100%;
+   /* width: 1200px; */
    margin: 0 auto;
    padding: 0 28px;
  }
@@ -136,7 +137,8 @@ a.menu {
 }
 
 
-.site-navigator a:hover  {
+.site-navigator a:hover,
+.catalog-navigator:hover > a  {
   background: #f7f6f3;
   color: #323232;
   transition: all .2s ease-in-out;
@@ -898,10 +900,10 @@ line-height: 45px;
   flex-direction: column;
   background: url("../img/news.jpg") no-repeat 50% 50%;
   width: 560px;
-  height: 220px;
   border-radius: 15px;
   margin-right: 13px;
   background-color: white;
+  background-size: cover;
 }
 
 .news h2 {
@@ -912,16 +914,17 @@ line-height: 45px;
   padding-top: 10px;
   text-align: left;
   color:#323232;
+  margin-bottom: 5px;
 }
 
 .news a {
+  display: block;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  padding-left: 19px;
-  padding-right: 150px;
-  margin-top: -10px;
   color: #323232;
+  margin-left: 19px;
+  width: 285px;
   text-decoration-line: underline;
 }
 
@@ -2315,6 +2318,10 @@ left: 0;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.range-controls .toggle:hover{
+  transform: scale(1.1);
 }
 
 .range-controls .toggle-min {
