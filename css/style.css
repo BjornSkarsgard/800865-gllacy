@@ -874,7 +874,7 @@ transition: all .2s ease-in-out;
 }
 
 .ice > div{
-  padding: 7px 13px 20px 13px;
+  padding: 7px 13px 21px 13px;
 }
 
 .ice:hover > div {
@@ -1743,7 +1743,7 @@ margin-bottom: 0px;
 a.cat-index {
   color: #ffffff;
   background-color: #d07058;
-  padding: 6px 13px 6px 13px;
+  padding: 6px 14px 7px 12px;
   font-weight: 500;
 }
 a.cat-index:hover {
@@ -2170,7 +2170,7 @@ button.filter-button {
   font-weight: 500;
   color:#ffffff;
   margin-left: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .icecream-sorting-fats span {
@@ -2510,10 +2510,10 @@ button.button-sorting {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-left: -5px;
-  margin-top: 49px;
-  margin-bottom: 2px;
-  padding-bottom: 28px;
+          margin-left: -5px;
+          margin-top: 52px;
+          margin-bottom: 2px;
+          padding-bottom: 24px;
   border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
