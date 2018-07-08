@@ -139,10 +139,25 @@ display: none;
 }
 
 a.menu {
-
     padding: 5px 14px;
 }
 
+a.menu::before{
+  content: "";
+    position: absolute;
+    top: 49px;
+    width: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all .3s ease-in-out;
+}
+
+.delivery a::before{
+  width:142px;
+}
+
+.company a::before{
+  width:91px;
+}
 
 .site-navigator a:hover,
 .catalog-navigator:hover > a  {
@@ -252,7 +267,7 @@ a.sub-link::after
   .btn-enter {
       display: inline-block;
       padding: 9px 16px 9px 43px;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 14px;
       line-height: 14px;
       text-align: center;
@@ -380,16 +395,23 @@ input[type="search"] {
   padding-right: 14px;
 }
 
+input[type="search"]:hover {
+  border: 2px solid #c7c6c5;
+}
+
 input[type="search"]::-webkit-input-placeholder {
   font-size: 14px;
+  color: #999999;
 }
 
 input[type="search"]:-ms-input-placeholder {
   font-size: 14px;
+  color: #999999;
 }
 
 input[type="search"]::-ms-input-placeholder {
   font-size: 14px;
+  color: #999999;
 }
 
 input[type="search"]::placeholder {
@@ -514,7 +536,7 @@ input[type="search"]::placeholder {
   display: block;
   font-size: 22px;
   line-height: 24px;
-
+  font-weight: 700;
 }
 
 
@@ -583,8 +605,8 @@ a.slide-btn:active {
   background: -webkit-linear-gradient(top,#e74a35 0%,#f26843 100%);
   background: -o-linear-gradient(top,#e74a35 0%,#f26843 100%);
   background: linear-gradient(to bottom,#e74a35 0%,#f26843 100%);
-  -webkit-box-shadow: 0 -2px 2px rgba(172,16,0,.64);
-          box-shadow: 0 -2px 2px rgba(172,16,0,.64)
+  -webkit-box-shadow: inset 0 2px 2px 0 #952718;
+  box-shadow: inset 0 2px 2px 0 #952718;
 }
 
 .slide-btn1:checked ~ main .slide1,
@@ -889,7 +911,7 @@ ice-catalog{
     width: 61px;
     height: 61px;
     vertical-align: baseline;
-    background-image: url("img/hit.png");
+    background-image: url("/img/hit.png");
     background-repeat: no-repeat;
 }
 
@@ -922,13 +944,18 @@ ice-catalog{
   text-align: center;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 500;
   color: #ffffff;
   margin-bottom: 11px;
   height: 44px;
   min-height: 44px;
   overflow: hidden;
+  text-decoration: underline;
+}
 
+.price-ice:hover {
+  color:#ffbc9e;
+  transition: all 0.3s ease-in-out;
 }
 
 .ice:hover .price-ice {
@@ -1073,7 +1100,7 @@ line-height: 45px;
 }
 
 .news a:hover {
-  color: #ed7360;
+  color: #e84d37;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -1809,6 +1836,7 @@ button.filter-button {
 .button-sorting:active {
   background: #eaeaea;
   border: 2px solid  #eaeaea;
+  box-shadow: inset 0 2px 1px #696969;
   -webkit-box-shadow: 0 -2px 2px #696969;
           box-shadow: 0 -2px 2px #696969;
   -webkit-transition: all 0.5s ease;
@@ -2138,8 +2166,8 @@ button.filter-button {
   display: -ms-flexbox;
   display: flex;
   font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
+  line-height: 16px;
+  font-weight: 500;
   color:#ffffff;
   margin-left: 14px;
   margin-bottom: 5px;
@@ -2148,6 +2176,9 @@ button.filter-button {
 .icecream-sorting-fats span {
   font-size: 14px;
   margin-left: 14px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 
@@ -2292,8 +2323,17 @@ option {
 
 }
 
+.fillers-fats-radio input[type="radio"]:disabled + .radio-indicator {
+  border: 4px solid rgba(255, 255, 255, 0.4);
+}
+
+
 .fillers-fats-radio input[type="radio"] + .radio-indicator:hover {
   border: 4px solid rgba(255, 255, 255, 1);
+}
+
+.fillers-fats-radio input[type="radio"]:disabled + .radio-indicator:hover{
+  border: 4px solid rgba(255, 255, 255, 0.4);
 }
 
 .fillers-fats-radio input[type="radio"]:checked + .radio-indicator::before {
@@ -2357,6 +2397,9 @@ fieldset{
   top: 1px;
   cursor: pointer;
   margin-right: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .filler-box input[type="checkbox"] + .checkbox-indicator {
@@ -2372,6 +2415,10 @@ fieldset{
 
 .filler-box input[type="checkbox"] + .checkbox-indicator:hover {
   border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.filler-box input[type="checkbox"]:disabled + .checkbox-indicator {
+  border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
 .filler-box input[type="checkbox"]:checked + .checkbox-indicator::before {
@@ -2440,7 +2487,7 @@ button.button-sorting {
       align-self: center;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 500;
   padding: 7px 29px;
   margin-top: 44px;
   margin-left: 730px;
