@@ -319,57 +319,81 @@ a.sub-link::after
 
 
 input[type="text"] {
-  font-size: 18px;
+  font-size: 16px;
   width: 239px;
+  font-weight: 900;
+  color:#323232;
     height: 42px;
     margin: 10px 19px;
     border-radius: 5px;
     padding-left: 14px;
     padding-right: 14px;
-    border: 2px solid #d3d3d2;
+    border: 1px solid #d3d3d2;
 }
+
+
+
 
 input[type="text"]::-webkit-input-placeholder{
   font-size: 14px;
+  color: #999999;
+  font-weight: 400;
 }
 
 input[type="text"]:-ms-input-placeholder{
   font-size: 14px;
+  color: #999999;
+  font-weight: 400;
 }
 
 input[type="text"]::-ms-input-placeholder{
   font-size: 14px;
+  color: #999999;
+  font-weight: 400;
 }
 
 input[type="text"]::placeholder{
   font-size: 14px;
+  color: #999999;
+  font-weight: 400;
 }
 
 input[type="password"] {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 900;
+  color:#323232;
   width: 239px;
     height: 42px;
     margin: 0px 19px;
     border-radius: 5px;
     padding-left: 14px;
     padding-right: 14px;
-    border: 2px solid #d3d3d2;
+    border: 1px solid #d3d3d2;
 }
+
 
 input[type="password"]::-webkit-input-placeholder{
   font-size: 14px;
+  color: #999999;
+  font-weight: 400;
 }
 
 input[type="password"]:-ms-input-placeholder{
   font-size: 14px;
+  color: #999999;
+  font-weight: 400;
 }
 
 input[type="password"]::-ms-input-placeholder{
   font-size: 14px;
+  color: #999999;
+  font-weight: 400;
 }
 
 input[type="password"]::placeholder{
   font-size: 14px;
+  color: #999999;
+  font-weight: 400;
 }
 
 .div-search{
@@ -395,8 +419,13 @@ input[type="search"] {
   padding-right: 14px;
 }
 
-input[type="search"]:hover {
-  border: 2px solid #c7c6c5;
+input[type="search"]:hover , input[type="password"]:hover , input[type="text"]:hover {
+  outline: 2px solid #c7c6c5;
+
+}
+
+input[type="search"]:focus , input[type="password"]:focus , input[type="text"]:focus {
+  outline: 2px solid #8fbdec;
 }
 
 input[type="search"]::-webkit-input-placeholder {
@@ -554,12 +583,12 @@ input[type="search"]::placeholder {
 
 .slider img {
   position: absolute;
-  left: 50%;
+  right: 50%;
   top:0;
   z-index: -1;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
 
 }
 
@@ -728,23 +757,24 @@ transition: all .2s ease-in-out;
 
 .banner-jam h2,
 .banner-chocolate h2  {
-  margin-left: 16px;
-    padding-top: 17px;
+  margin-left: 0;
+    padding-top: 0;
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
     color: #ffffff;
     width: 100%;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .banner-jam p,
 .banner-chocolate p {
-  margin-left: 17px;
-  margin-top: -15px;
-  padding-right: 35px;
-  margin-bottom: 44px;
+  margin-left: 0;
+  margin-top: 0;
+  padding-right: 0;
+  margin-bottom: 45px;
+
   font-size: 18px;
   width: 100%;
   line-height: 22px;
@@ -766,8 +796,8 @@ transition: all .2s ease-in-out;
   -ms-flex-item-align: end;
       align-self: flex-end;
     border-radius: 23px;
-    margin-bottom: 25px;
-    margin-right: 20px;
+    margin-bottom: 3px;
+    margin-right: 0;
 }
 
 .jam, .chocolate {
@@ -795,6 +825,7 @@ transition: all .2s ease-in-out;
   background: url("../img/raspberries.jpg") 22% 52%;
   border-radius: 15px;
   background-color: #b31832;
+  padding: 17px 19px 21px 19px;
 
 }
 
@@ -802,6 +833,7 @@ transition: all .2s ease-in-out;
   background: url("../img/chocolate.jpg") 81% 47%;
   border-radius: 15px;
   background-color: #663412;
+  padding: 17px 19px 21px 19px;
 }
 
 .button-have {
@@ -815,7 +847,7 @@ transition: all .2s ease-in-out;
   border-radius: 100px;
   color:#ffffff;
 
-  margin-right: 19px;
+  margin-right: 0;
   margin-top: 27px;
   text-shadow: 0 2px 5px rgba(160,32,11,.76);
   text-decoration: none;
@@ -911,7 +943,7 @@ ice-catalog{
     width: 61px;
     height: 61px;
     vertical-align: baseline;
-    background-image: url("/img/hit.png");
+    background-image: url("../img/hit.png");
     background-repeat: no-repeat;
 }
 
@@ -1020,15 +1052,16 @@ line-height: 45px;
 }
 
 .waffle p {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   top:-46px;
   left: -4px;
   -webkit-box-pack:justify;
       -ms-flex-pack:justify;
-          justify-content:space-between;
-  padding-left: 24px;
+          justify-content:space-between; */
+          padding-left: 76px;
+          position: relative;
   margin-right: 7px;
   margin-bottom: 23px;
   margin-top: 0;
@@ -1042,11 +1075,10 @@ line-height: 45px;
 }
 
 
-
 .waffle img {
-  margin-top: -13px;
-  margin-left: -6px;
-  margin-right: 10px;
+  position: absolute;
+  left: 18px;
+  top: -12px;
 }
 
 .flex-news-sub {
@@ -1118,7 +1150,7 @@ line-height: 45px;
 .subscribe p {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 500;
   color: #5a5a5a;
   padding-left: 20px;
   padding-top: 13px;
@@ -1127,32 +1159,56 @@ line-height: 45px;
 }
 
 input[type="email"] {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 900;
   margin-left: 20px;
   margin-top: 0;
   margin-bottom: 35px;
   margin-right: 1px;
-  padding: 13px;
+  padding: 10px 11px 11px 14px;
+  line-height: 24px;
   height: 46px;
   width: 370px;
   border-radius: 5px;
-  border: 2px solid #d3d3d2;
+  border: 1px solid #d3d3d2;
+  color: #323232;
+}
+
+input[type="email"]:hover {
+  outline: 2px solid #c7c6c5;
+
+}
+
+input[type="email"]:focus {
+  outline: 2px solid #8fbdec;
 }
 
 input[type="email"]::-webkit-input-placeholder{
   font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
 }
 
 input[type="email"]:-ms-input-placeholder{
   font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
 }
 
 input[type="email"]::-ms-input-placeholder{
   font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
 }
 
 input[type="email"]::placeholder{
   font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
 }
 
 .subscribe button {
@@ -1230,7 +1286,7 @@ input[type="email"]::placeholder{
   width: 100%;
   height: 430px;
   background-color: #e7e3d1;
-  background: url("/img/map.jpg");
+  background: url("../img/map.jpg");
   background-repeat: no-repeat;
     background-position: top;
 }
@@ -1243,6 +1299,7 @@ input[type="email"]::placeholder{
   right: 29px;
   top: 61px;
   padding-left: 20px;
+  padding-right: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1657,16 +1714,26 @@ border-bottom: none;
   letter-spacing: 0.1px;
 }
 
+.feedback-window input[type="text"]::placeholder ,
+ .feedback-window input[type="email"]::placeholder ,
+ .feedback-window textarea::placeholder{
+  color:#999999;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .feedback-window input[type="text"]{
 margin-top: 20px;
-font-size: 15px;
+font-size: 16px;
+font-weight: 900;
+color: #323232;
 padding-left: 13px;
 padding-right: 13px;
-letter-spacing: 0.9px;
+
 width: 266px;
 height: 45px;
 border: 1px solid #d3d3d2;
-margin-bottom: 0px;
+margin-bottom: 19px;
 }
 
 .feedback-window input[type="email"] {
@@ -1675,12 +1742,21 @@ margin-bottom: 0px;
   padding-right: 13px;
   padding-left: 13px;
   border: 1px solid #d3d3d2;
-  letter-spacing: 0.6px;
-  font-size: 15px;
+
+  font-size: 16px;
+font-weight: 900;
+color: #323232;
   margin-bottom: 19px;
   margin-right: 10px;
 }
 
+.feedback-window textarea:hover {
+  outline: 2px solid #c7c6c5;
+}
+
+.feedback-window textarea:focus{
+  outline: 2px solid #8fbdec;
+}
 .feedback-window textarea{
   width: 427px;
   height: 155px;
@@ -1689,8 +1765,9 @@ margin-bottom: 0px;
   padding-bottom: 12px;
   padding-right: 12px;
   border: 1px solid #d3d3d2;
-  letter-spacing: 0.1px;
   font-size: 16px;
+font-weight: 900;
+color: #323232;
   margin-left: 20px;
   margin-bottom: 18px;
   resize: none;
@@ -1703,7 +1780,8 @@ margin-bottom: 0px;
   line-height: 24px;
   font-weight: bold;
   color: #fefefe;
-  margin-left: 309px;
+  margin-left: 311px;
+
     padding: 10px 23px 10px 25px;
     text-align: center;
     vertical-align: middle;
@@ -2162,9 +2240,9 @@ button.filter-button {
 }
 
 .icecream-sorting  {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; */
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -2205,9 +2283,6 @@ button.filter-button {
 
 .filter-category {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-item-align: start;
       align-self: flex-start;
   border: 0;
@@ -2218,6 +2293,9 @@ button.filter-button {
 
 }
 
+.filter-category select::-ms-expand {
+  display: none;
+}
 
 .filter-category select{
   position: relative;
@@ -2226,35 +2304,21 @@ button.filter-button {
   font-weight: 400;
   color: #ffffff;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
   padding: 8px 35px 8px 13px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border: none;
+  background: url("../img/icon-down-dir-white.svg") no-repeat right 14px top 50%;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.filter-category::after{
-  content: "";
-  position: absolute;
-    top: 37px;
-    right: 14px;
-    width: 0;
-    height: 0;
-    border-top: 9px solid #fff;
-    border-right: 6px solid transparent;
-    border-left: 6px solid transparent;
-}
-.filter-category:hover::after {
-  border-top: 9px solid #323232;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-  color: #323232;
-}
+
 
 
 .filter-category select:hover {
   color: #323232;
+  background-image: url("../img/icon-down-dir.svg");
 }
 
 option {
@@ -2269,7 +2333,6 @@ option {
 .fillers-fats  {
   display: block;
     color: #ffffff;
-    width: 439px;
     margin-left: 3px;
     margin-top: 0px;
 }
@@ -2285,7 +2348,7 @@ option {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0;
-  padding: 7px 13px;
+  padding: 7px 6px;
   border-radius: 20px;
  background-color: rgba(255, 255, 255, 0.2);
 }
@@ -2295,15 +2358,15 @@ option {
 }
 
 .fats-radio {
-  margin-right: 36px;
+  margin-right: 7px;
 }
 
 .fillers-fats-radio {
   position: relative;
   left: -2px;
-  padding-left: 25px;
-  margin-left: 10px;
-  color:rgba(255, 255, 255, 0.8);
+  padding-left: 24px;
+  margin-left: 19px;
+  color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
 }
 
@@ -2315,7 +2378,6 @@ option {
   position: absolute;
   top: -2px;
   left: -8px;
-
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -2358,20 +2420,7 @@ fieldset{
   border: none;
 }
 .fillers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-flex
-  border: 0;
-      -ms-flex
-  border: none;
-          flex
+  margin-right: 0;
   border: none;
   font-size: 16px;
   line-height: 18px;
@@ -2385,7 +2434,7 @@ fieldset{
 }
 
 .fillers-chekbox {
-  margin-right: -4px;
+  margin-right: -6px;
   margin-left: 0;
 
 }
@@ -2396,7 +2445,7 @@ fieldset{
   padding-left: 43px;
   top: 1px;
   cursor: pointer;
-  margin-right: 13px;
+  margin-right: 16px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -2405,7 +2454,7 @@ fieldset{
 .filler-box input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 0px;
-  left: 7px;
+  left: 4px;
   width: 20px;
   height: 20px;
   margin-left: 5px;
@@ -2479,18 +2528,11 @@ background-color: white;
 }
 
 button.button-sorting {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  -ms-flex-item-align: center;
-      align-self: center;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  margin-top: 28px;
   padding: 7px 29px;
-  margin-top: 44px;
-  margin-left: 730px;
   white-space: nowrap;
   text-align: center;
   vertical-align: middle;
@@ -2511,7 +2553,8 @@ button.button-sorting {
       -ms-flex-pack: end;
           justify-content: flex-end;
           margin-left: -5px;
-          margin-top: 52px;
+          margin-top: 49px;
+
           margin-bottom: 2px;
           padding-bottom: 24px;
   border-bottom: 1px solid rgba(255,255,255,.2);
